@@ -883,3 +883,154 @@ Uncaught Error: Module build failed: Error: ENOENT: no such file or directory, o
     at __webpack_require__ (app.js:679)
     at app.js:725
 
+==================
+tried restarting webpack-dev-server
+which triggered complaint from firewall about external connections,
+but failed webpack compile with lots of errors:
+
+$ npm restart webpack-dev-server -- --port=5001
+
+> restart
+> npm stop --if-present && npm start "webpack-dev-server" "--port=5001"
+
+
+> start
+> webpack-dev-server "webpack-dev-server"
+
+Project is running at http://localhost:8080/
+webpack output is served from /
+Content not from webpack is served from C:\Users\steph\Code\DevelopmentInterviewStarterKit\client\dist
+Hash: 0be84f6c54322e766b3f
+Version: webpack 3.12.0
+Time: 26064ms
+ Asset    Size  Chunks                    Chunk Names
+app.js  9.1 MB       0  [emitted]  [big]  main
+   [0] ./node_modules/node-libs-browser/node_modules/process/browser.js 5.42 kB {0} [built]
+   [3] ./node_modules/path-browserify/index.js 6.18 kB {0} [built]
+  [15] ./node_modules/react/index.js 190 bytes {0} [built]
+  [17] ./node_modules/url/url.js 23.3 kB {0} [built]
+  [33] ./node_modules/stream-http/index.js 1.88 kB {0} [built]
+ [168] (webpack)/hot/log.js 1.04 kB {0} [built]
+ [169] (webpack)/hot/emitter.js 77 bytes {0} [built]
+ [173] ./node_modules/redux/es/index.js 1.08 kB {0} [built]
+ [229] ./node_modules/spdy/lib/spdy.js 506 bytes {0} [built]
+ [271] ./node_modules/strip-ansi/index.js 161 bytes {0} [built]
+ [567] multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server 64 bytes {0} [built]
+ [568] (webpack)-dev-server/client?http://localhost:8080 7.93 kB {0} [built]
+ [578] (webpack)/hot/only-dev-server.js 2.37 kB {0} [built]
+ [580] ./client/src/index.js 1.4 kB {0} [built]
+ [661] (webpack)-dev-server/lib/Server.js 23.2 kB {0} [built]
+    + 1463 hidden modules
+
+WARNING in ./node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js
+24:11-32 Critical dependency: the request of a dependency is an expression
+ @ ./node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js
+ @ ./node_modules/uglifyjs-webpack-plugin/dist/index.js
+ @ (webpack)/lib/optimize/UglifyJsPlugin.js
+ @ (webpack)/lib/webpack.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+WARNING in ./node_modules/loader-runner/lib/loadLoader.js
+3:2-28 Critical dependency: the request of a dependency is an expression
+ @ ./node_modules/loader-runner/lib/loadLoader.js
+ @ ./node_modules/loader-runner/lib/LoaderRunner.js
+ @ (webpack)/lib/NormalModule.js
+ @ (webpack)/lib/AutomaticPrefetchPlugin.js
+ @ (webpack)/lib/webpack.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+WARNING in ./node_modules/express/lib/view.js
+81:13-25 Critical dependency: the request of a dependency is an expression
+ @ ./node_modules/express/lib/view.js
+ @ ./node_modules/express/lib/application.js
+ @ ./node_modules/express/lib/express.js
+ @ ./node_modules/express/index.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+WARNING in ./node_modules/chokidar/lib/fsevents-handler.js
+Module not found: Error: Can't resolve 'fsevents' in 'C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\chokidar\lib'
+ @ ./node_modules/chokidar/lib/fsevents-handler.js 7:17-36
+ @ ./node_modules/chokidar/index.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+ERROR in ./node_modules/chokidar/index.js
+Module not found: Error: Can't resolve 'fs' in 'C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\chokidar'
+ @ ./node_modules/chokidar/index.js 3:9-22
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+ERROR in ./node_modules/chokidar/lib/nodefs-handler.js
+Module not found: Error: Can't resolve 'fs' in 'C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\chokidar\lib'
+ @ ./node_modules/chokidar/lib/nodefs-handler.js 3:9-22
+ @ ./node_modules/chokidar/index.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+ERROR in ./node_modules/chokidar/lib/fsevents-handler.js
+Module not found: Error: Can't resolve 'fs' in 'C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\chokidar\lib'
+ @ ./node_modules/chokidar/lib/fsevents-handler.js 3:9-22
+ @ ./node_modules/chokidar/index.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+ERROR in ./node_modules/destroy/index.js
+Module not found: Error: Can't resolve 'fs' in 'C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\destroy'
+ @ ./node_modules/destroy/index.js 14:17-30
+ @ ./node_modules/send/index.js
+ @ ./node_modules/serve-static/index.js
+ @ ./node_modules/express/lib/express.js
+ @ ./node_modules/express/index.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+ERROR in ./node_modules/etag/index.js
+Module not found: Error: Can't resolve 'fs' in 'C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\etag'
+ @ ./node_modules/etag/index.js 22:12-25
+ @ ./node_modules/send/index.js
+ @ ./node_modules/serve-static/index.js
+ @ ./node_modules/express/lib/express.js
+ @ ./node_modules/express/index.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+ERROR in ./node_modules/express/lib/view.js
+Module not found: Error: Can't resolve 'fs' in 'C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\express\lib'
+ @ ./node_modules/express/lib/view.js 18:9-22
+ @ ./node_modules/express/lib/application.js
+ @ ./node_modules/express/lib/express.js
+ @ ./node_modules/express/index.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+ERROR in ./node_modules/fs.realpath/index.js
+Module not found: Error: Can't resolve 'fs' in 'C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\fs.realpath'
+ @ ./node_modules/fs.realpath/index.js 8:9-22
+ @ ./node_modules/glob/glob.js
+ @ ./node_modules/rimraf/rimraf.js
+ @ ./node_modules/del/index.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+ERROR in ./node_modules/fs.realpath/old.js
+Module not found: Error: Can't resolve 'fs' in 'C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\fs.realpath'
+ @ ./node_modules/fs.realpath/old.js 24:9-22
+ @ ./node_modules/fs.realpath/index.js
+ @ ./node_modules/glob/glob.js
+ @ ./node_modules/rimraf/rimraf.js
+ @ ./node_modules/del/index.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+ERROR in ./node_modules/glob/glob.js
+Module not found: Error: Can't resolve 'fs' in 'C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\glob'
+ @ ./node_modules/glob/glob.js 43:9-22
+ @ ./node_modules/rimraf/rimraf.js
+ @ ./node_modules/del/index.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+==================
