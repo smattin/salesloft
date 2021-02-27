@@ -1149,4 +1149,127 @@ $ bin/bundle info wdm
         Homepage: https://github.com/Maher4Ever/wdm
         Path: C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/wdm-0.1.1
 
+==================
+same errors on url.js after restart
+attempting to restart servers seems to show webpack is already running?
+
+Request URL: http://localhost:5001/app.js
+Request Method: GET
+Status Code: 200 OK
+Remote Address: 127.0.0.1:5001
+Referrer Policy: no-referrer-when-downgrade
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (main)
+$ bin/bundle exec foreman start
+06:38:34 web.1     | started with pid 18020
+06:38:34 webpack.1 | started with pid 15152
+06:38:35 webpack.1 |
+06:38:35 webpack.1 | > start
+06:38:35 webpack.1 | > webpack-dev-server "--port=5001"
+06:38:35 webpack.1 |
+06:38:38 webpack.1 | node:events:356
+06:38:38 webpack.1 |       throw er; // Unhandled 'error' event
+06:38:38 webpack.1 |       ^
+06:38:38 webpack.1 |
+06:38:38 webpack.1 | Error: listen EADDRINUSE: address already in use 127.0.0.1:5001
+06:38:38 webpack.1 |     at Server.setupListenHandle [as _listen2] (node:net:1312:16)
+06:38:38 webpack.1 |     at listenInCluster (node:net:1360:12)
+06:38:38 webpack.1 |     at GetAddrInfoReqWrap.doListen [as callback] (node:net:1498:7)
+06:38:38 webpack.1 |     at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:8)
+06:38:38 webpack.1 | Emitted 'error' event on Server instance at:
+06:38:38 webpack.1 |     at emitErrorNT (node:net:1339:8)
+06:38:38 webpack.1 |     at processTicksAndRejections (node:internal/process/task_queues:81:21) {
+06:38:38 webpack.1 |   code: 'EADDRINUSE',
+06:38:38 webpack.1 |   errno: -4091,
+06:38:38 webpack.1 |   syscall: 'listen',
+06:38:38 webpack.1 |   address: '127.0.0.1',
+06:38:38 webpack.1 |   port: 5001
+06:38:38 webpack.1 | }
+06:38:39 webpack.1 | exited with code 1
+06:38:39 system    | sending SIGKILL to all processes
+06:38:39 system    | sending SIGKILL to web.1 at pid 18020
+06:38:39 web.1     | exited with code 0
+===================
+after hard reboot, app and webpack seem to start OK, but stopped
+with lots of console errors net::ERR_CONNECTION_REFUSED on webpack
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (main)
+$ bin/bundle exec foreman start
+07:00:17 web.1     | started with pid 5112
+07:00:17 webpack.1 | started with pid 3132
+07:02:52 webpack.1 |
+07:02:52 webpack.1 | > start
+07:02:52 webpack.1 | > webpack-dev-server "--port=5001"
+07:02:52 webpack.1 |
+07:04:10 web.1     | => Booting Puma
+07:04:10 web.1     | => Rails 5.1.7 application starting in development
+07:04:10 web.1     | => Run `rails server -h` for more startup options
+07:04:59 web.1     | *** SIGUSR2 not implemented, signal based restart unavailable!
+07:04:59 web.1     | *** SIGUSR1 not implemented, signal based restart unavailable!
+07:04:59 web.1     | *** SIGHUP not implemented, signal based logs reopening unavailable!
+07:04:59 web.1     | Puma starting in single mode...
+07:04:59 web.1     | * Version 3.12.6 (ruby 2.7.2-p137), codename: Llamas in Pajamas
+07:04:59 web.1     | * Min threads: 5, max threads: 5
+07:04:59 web.1     | * Environment: development
+07:04:59 web.1     | * Listening on tcp://localhost:5000
+07:04:59 web.1     | Use Ctrl-C to stop
+07:05:34 web.1     | Started GET "/" for 127.0.0.1 at 2021-02-27 07:05:34 -0500
+07:05:40 web.1     |    (0.4ms)  SELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC
+07:05:40 web.1     | Processing by MainController#index as HTML
+07:05:41 web.1     |   Rendering main/index.html.erb within layouts/application
+07:05:41 web.1     |   Rendered main/index.html.erb within layouts/application (262.3ms)
+07:05:41 web.1     | Completed 200 OK in 1448ms (Views: 1257.3ms | ActiveRecord: 0.0ms)
+07:05:41 web.1     |
+07:05:41 web.1     |
+07:07:12 webpack.1 | Project is running at http://localhost:5001/
+07:07:12 webpack.1 | webpack output is served from /
+07:07:12 webpack.1 | Content not from webpack is served from C:\Users\steph\Code\DevelopmentInterviewStarterKit\client\dist
+07:07:46 web.1     | Started GET "/" for 127.0.0.1 at 2021-02-27 07:07:46 -0500
+07:07:46 web.1     | Processing by MainController#index as HTML
+07:07:46 web.1     |   Rendering main/index.html.erb within layouts/application
+07:07:46 web.1     |   Rendered main/index.html.erb within layouts/application (0.6ms)
+07:07:46 web.1     | Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+07:07:46 web.1     |
+07:07:46 web.1     |
+07:07:54 webpack.1 | webpack: wait until bundle finished: /app.js
+07:08:32 webpack.1 | Hash: 4b6b45110d2b903aad6e
+07:08:32 webpack.1 | Version: webpack 3.12.0
+07:08:32 webpack.1 | Time: 79199ms
+07:08:32 webpack.1 |  Asset     Size  Chunks                    Chunk Names
+07:08:32 webpack.1 | app.js  1.64 MB       0  [emitted]  [big]  main
+07:08:32 webpack.1 |    [0] ./node_modules/react/index.js 190 bytes {0} [built]
+07:08:32 webpack.1 |   [12] (webpack)/hot/log.js 1.04 kB {0} [built]
+07:08:32 webpack.1 |   [16] ./node_modules/redux/es/index.js 1.08 kB {0} [built]
+07:08:32 webpack.1 |   [24] (webpack)/hot/emitter.js 77 bytes {0} [built]
+07:08:32 webpack.1 |   [26] ./node_modules/react-router-redux/lib/index.js 1.97 kB {0} [built]
+07:08:32 webpack.1 |   [49] multi (webpack)-dev-server/client?http://localhost:5001 webpack/hot/only-dev-server ./client/src/index.js 52 bytes {0} [built]
+07:08:32 webpack.1 |   [50] (webpack)-dev-server/client?http://localhost:5001 7.93 kB {0} [built]
+07:08:32 webpack.1 |   [51] ./node_modules/url/url.js 23.3 kB {0} [built]
+07:08:32 webpack.1 |   [58] ./node_modules/strip-ansi/index.js 161 bytes {0} [built]
+07:08:32 webpack.1 |   [60] ./node_modules/loglevel/lib/loglevel.js 7.86 kB {0} [built]
+07:08:32 webpack.1 |   [61] (webpack)-dev-server/client/socket.js 1.08 kB {0} [built]
+07:08:32 webpack.1 |   [63] (webpack)-dev-server/client/overlay.js 3.67 kB {0} [built]
+07:08:32 webpack.1 |   [68] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+07:08:32 webpack.1 |   [70] (webpack)/hot/only-dev-server.js 2.37 kB {0} [built]
+07:08:32 webpack.1 |   [72] ./client/src/index.js 1.4 kB {0} [built]
+07:08:32 webpack.1 |     + 140 hidden modules
+07:08:32 webpack.1 | webpack: Compiled successfully.
+07:08:44 web.1     | Started GET "/api/me.json" for 127.0.0.1 at 2021-02-27 07:08:44 -0500
+07:08:46 web.1     | Processing by Api::MeController#me as JSON
+07:08:48 web.1     | Completed 200 OK in 1729ms (Views: 157.1ms | ActiveRecord: 0.0ms)
+07:08:48 web.1     |
+07:08:48 web.1     |
+07:09:14 system    | SIGINT received, starting shutdown
+07:09:14 web.1     | - Gracefully stopping, waiting for requests to finish
+07:09:14 web.1     | === puma shutdown: 2021-02-27 07:09:14 -0500 ===
+07:09:14 web.1     | - Goodbye!
+07:09:14 web.1     | Exiting
+07:09:14 system    | sending SIGKILL to all processes
+07:09:14 system    | sending SIGKILL to web.1 at pid 5112
+07:09:14 system    | sending SIGKILL to webpack.1 at pid 3132
+07:09:14 web.1     | exited with code 0
+07:09:15 webpack.1 | exited with code 0
+Terminate batch job (Y/N)? Y
+Y
+
 
