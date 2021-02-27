@@ -866,3 +866,20 @@ EventTarget.dispatchEvent @ app.js:3310
 SockJS._transportMessage @ app.js:4025
 EventEmitter.emit @ app.js:3226
 WebSocketTransport.ws.onmessage @ app.js:6101
+=================
+after rm -r node_modules
+127.0.0.1:5000
+shows only one console error:
+
+Uncaught Error: Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\url\url.js'
+    at Object.<anonymous> (app.js:1062)
+    at __webpack_require__ (app.js:679)
+    at fn (app.js:89)
+    at Object.<anonymous> (app.js:807)
+    at Object.<anonymous> (app.js:1055)
+    at __webpack_require__ (app.js:679)
+    at fn (app.js:89)
+    at Object.<anonymous> (app.js:792)
+    at __webpack_require__ (app.js:679)
+    at app.js:725
+
