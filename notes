@@ -400,3 +400,88 @@ $ bundle exec foreman start
 02:27:36 system    | sending SIGKILL to web.1 at pid 2376
 02:27:36 web.1     | exited with code 0
 ========================================
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (main)
+$ bundle exec foreman start
+02:59:52 web.1     | started with pid 7352
+02:59:52 webpack.1 | started with pid 10548
+03:00:01 webpack.1 |
+03:00:01 webpack.1 | > start
+03:00:01 webpack.1 | > webpack-dev-server "--port=5001"
+03:00:01 webpack.1 |
+03:00:37 web.1     | => Booting Puma
+03:00:37 web.1     | => Rails 5.1.7 application starting in development
+03:00:37 web.1     | => Run `rails server -h` for more startup options
+03:00:47 web.1     | Exiting
+03:00:47 web.1     | C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/devise-4.7.3/lib/devise/omniauth.rb:12:in `<top (required)>': You are using an old OmniAuth version, please ensure you have 1.0.0.pr2 version or later installed. (RuntimeError)
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/activesupport-5.1.7/lib/active_support/dependencies.rb:292:in `require'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/activesupport-5.1.7/lib/active_support/dependencies.rb:292:in `block in require'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/activesupport-5.1.7/lib/active_support/dependencies.rb:258:in `load_dependency'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/activesupport-5.1.7/lib/active_support/dependencies.rb:292:in `require'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/devise-4.7.3/lib/devise.rb:443:in `omniauth'
+03:00:47 web.1     |    from C:/Users/steph/Code/DevelopmentInterviewStarterKit/config/initializers/devise.rb:7:in `block in <top (required)>'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/devise-4.7.3/lib/devise.rb:307:in `setup'
+03:00:47 web.1     |    from C:/Users/steph/Code/DevelopmentInterviewStarterKit/config/initializers/devise.rb:5:in `<top (required)>'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/activesupport-5.1.7/lib/active_support/dependencies.rb:286:in `load'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/activesupport-5.1.7/lib/active_support/dependencies.rb:286:in `block in load'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/activesupport-5.1.7/lib/active_support/dependencies.rb:258:in `load_dependency'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/activesupport-5.1.7/lib/active_support/dependencies.rb:286:in `load'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/engine.rb:655:in `block in load_config_initializer'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/activesupport-5.1.7/lib/active_support/notifications.rb:168:in `instrument'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/engine.rb:654:in `load_config_initializer'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/engine.rb:612:in `block (2 levels) in <class:Engine>'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/engine.rb:611:in `each'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/engine.rb:611:in `block in <class:Engine>'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/initializable.rb:30:in `instance_exec'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/initializable.rb:30:in `run'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/initializable.rb:59:in `block in run_initializers'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:228:in `block in tsort_each'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:422:in `block (2 levels) in each_strongly_connected_component_from'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:431:in `each_strongly_connected_component_from'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:421:in `block in each_strongly_connected_component_from'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/initializable.rb:48:in `each'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/initializable.rb:48:in `tsort_each_child'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:415:in `call'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:415:in `each_strongly_connected_component_from'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:349:in `block in each_strongly_connected_component'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:347:in `each'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:347:in `call'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:347:in `each_strongly_connected_component'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:226:in `tsort_each'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:205:in `tsort_each'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/initializable.rb:58:in `run_initializers'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/application.rb:353:in `initialize!'
+03:00:47 web.1     |    from C:/Users/steph/Code/DevelopmentInterviewStarterKit/config/environment.rb:5:in `<top (required)>'
+03:00:47 web.1     |    from config.ru:3:in `require_relative'
+03:00:47 web.1     |    from config.ru:3:in `block in <main>'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:116:in `eval'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:116:in `new_from_string'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:105:in `load_file'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:66:in `parse_file'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/rack-2.2.3/lib/rack/server.rb:349:in `build_app_and_options_from_config'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/rack-2.2.3/lib/rack/server.rb:249:in `app'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/commands/server/server_command.rb:24:in `app'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/rack-2.2.3/lib/rack/server.rb:422:in `wrapped_app'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/commands/server/server_command.rb:80:in `log_to_stdout'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/commands/server/server_command.rb:42:in `start'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/commands/server/server_command.rb:135:in `block in perform'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/commands/server/server_command.rb:130:in `tap'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/commands/server/server_command.rb:130:in `perform'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/thor-1.1.0/lib/thor/command.rb:27:in `run'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/thor-1.1.0/lib/thor/invocation.rb:127:in `invoke_command'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/thor-1.1.0/lib/thor.rb:392:in `dispatch'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/command/base.rb:63:in `perform'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/command.rb:44:in `invoke'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/commands.rb:16:in `<top (required)>'
+03:00:47 web.1     |    from bin/rails:9:in `require'
+03:00:47 web.1     |    from bin/rails:9:in `<main>'
+03:00:48 web.1     | exited with code 1
+03:00:48 system    | sending SIGKILL to all processes
+03:00:48 system    | sending SIGKILL to webpack.1 at pid 10548
+03:00:48 webpack.1 | exited with code 0
+=======================================
+https://stackoverflow.com/questions/65702896/latest-omniauth-facebook-gem-breaks-devise
+says use this in Gemfile to fix above error
+gem 'devise', github: 'heartcombo/devise', branch: 'ca-omniauth-2'
+but Gemfile does not have devise. It is in
+C:\Users\steph\Code\DevelopmentInterviewStarterKit\config\initializers\devise.rb
