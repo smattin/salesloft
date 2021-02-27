@@ -1,0 +1,402 @@
+https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.7.2-1/rubyinstaller-devkit-2.7.2-1-x64.exe
+
+$ ruby -v
+ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x64-mingw32]
+
+$ cd Code/Dev*
+
+$ PATH=`pwd`/bin:/c/Ruby27-x64/bin:$PATH
+
+$ which rake
+/c/Users/steph/Code/DevelopmentInterviewStarterKit/bin/rake
+
+/c/Ruby27-x64/lib/ruby/gems/2.7.0/gems/rake-13.0.1
+
+rm Gemfile.lock
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (master)
+$ bundler install
+Fetching gem metadata from https://rubygems.org/............
+Resolving dependencies.................................
+Fetching rake 13.0.3
+Installing rake 13.0.3
+Using concurrent-ruby 1.1.8
+Fetching i18n 1.8.9
+Installing i18n 1.8.9
+Fetching minitest 5.14.4
+Installing minitest 5.14.4
+Fetching thread_safe 0.3.6
+Installing thread_safe 0.3.6
+Fetching tzinfo 1.2.9
+Installing tzinfo 1.2.9
+Fetching activesupport 5.1.7
+Installing activesupport 5.1.7
+Fetching builder 3.2.4
+Installing builder 3.2.4
+Fetching erubi 1.10.0
+Installing erubi 1.10.0
+Fetching racc 1.5.2
+Installing racc 1.5.2 with native extensions
+Fetching nokogiri 1.11.1 (x64-mingw32)
+Installing nokogiri 1.11.1 (x64-mingw32)
+Fetching rails-dom-testing 2.0.3
+Installing rails-dom-testing 2.0.3
+Fetching crass 1.0.6
+Installing crass 1.0.6
+Fetching loofah 2.9.0
+Installing loofah 2.9.0
+Fetching rails-html-sanitizer 1.3.0
+Installing rails-html-sanitizer 1.3.0
+Fetching actionview 5.1.7
+Installing actionview 5.1.7
+Fetching rack 2.2.3
+Installing rack 2.2.3
+Fetching rack-test 1.1.0
+Installing rack-test 1.1.0
+Fetching actionpack 5.1.7
+Installing actionpack 5.1.7
+Fetching nio4r 2.5.5
+Installing nio4r 2.5.5 with native extensions
+Fetching websocket-extensions 0.1.5
+Installing websocket-extensions 0.1.5
+Fetching websocket-driver 0.6.5
+Installing websocket-driver 0.6.5 with native extensions
+Fetching actioncable 5.1.7
+Installing actioncable 5.1.7
+Fetching globalid 0.4.2
+Installing globalid 0.4.2
+Fetching activejob 5.1.7
+Installing activejob 5.1.7
+Fetching mini_mime 1.0.2
+Installing mini_mime 1.0.2
+Fetching mail 2.7.1
+Installing mail 2.7.1
+Fetching actionmailer 5.1.7
+Installing actionmailer 5.1.7
+Fetching activemodel 5.1.7
+Installing activemodel 5.1.7
+Fetching arel 8.0.0
+Installing arel 8.0.0
+Fetching activerecord 5.1.7
+Installing activerecord 5.1.7
+Fetching public_suffix 4.0.6
+Installing public_suffix 4.0.6
+Fetching addressable 2.7.0
+Installing addressable 2.7.0
+Fetching bcrypt 3.1.16
+Installing bcrypt 3.1.16 with native extensions
+Fetching bindex 0.8.1
+Installing bindex 0.8.1 with native extensions
+Using bundler 2.2.11
+Fetching byebug 11.1.3
+Installing byebug 11.1.3 with native extensions
+Fetching xpath 3.2.0
+Installing xpath 3.2.0
+Fetching capybara 2.18.0
+Installing capybara 2.18.0
+Fetching childprocess 3.0.0
+Installing childprocess 3.0.0
+Fetching coderay 1.1.3
+Installing coderay 1.1.3
+Fetching coffee-script-source 1.12.2
+Installing coffee-script-source 1.12.2
+Fetching execjs 2.7.0
+Installing execjs 2.7.0
+Fetching coffee-script 2.4.1
+Installing coffee-script 2.4.1
+Fetching method_source 1.0.0
+Installing method_source 1.0.0
+Fetching thor 1.1.0
+Installing thor 1.1.0
+Fetching railties 5.1.7
+Installing railties 5.1.7
+Fetching coffee-rails 4.2.2
+Installing coffee-rails 4.2.2
+Fetching orm_adapter 0.5.0
+Installing orm_adapter 0.5.0
+Fetching responders 3.0.1
+Installing responders 3.0.1
+Fetching warden 1.2.9
+Installing warden 1.2.9
+Fetching devise 4.7.3
+Installing devise 4.7.3
+Fetching dotenv 2.7.6
+Installing dotenv 2.7.6
+Fetching dotenv-rails 2.7.6
+Installing dotenv-rails 2.7.6
+Fetching faraday-net_http 1.0.1
+Installing faraday-net_http 1.0.1
+Fetching multipart-post 2.1.1
+Installing multipart-post 2.1.1
+Fetching ruby2_keywords 0.0.4
+Installing ruby2_keywords 0.0.4
+Fetching faraday 1.3.0
+Installing faraday 1.3.0
+Fetching ffi 1.14.2 (x64-mingw32)
+Installing ffi 1.14.2 (x64-mingw32)
+Fetching foreman 0.87.2
+Installing foreman 0.87.2
+Fetching hashie 4.1.0
+Installing hashie 4.1.0
+Fetching jbuilder 2.11.2
+Installing jbuilder 2.11.2
+Fetching jwt 2.2.2
+Installing jwt 2.2.2
+Fetching rb-fsevent 0.10.4
+Installing rb-fsevent 0.10.4
+Fetching rb-inotify 0.10.1
+Installing rb-inotify 0.10.1
+Fetching ruby_dep 1.5.0
+Installing ruby_dep 1.5.0
+Fetching listen 3.1.5
+Installing listen 3.1.5
+Fetching multi_json 1.15.0
+Installing multi_json 1.15.0
+Fetching multi_xml 0.6.0
+Installing multi_xml 0.6.0
+Fetching oauth2 1.4.4
+Installing oauth2 1.4.4
+Fetching rack-protection 2.1.0
+Installing rack-protection 2.1.0
+Fetching omniauth 2.0.3
+Installing omniauth 2.0.3
+Fetching omniauth-oauth2 1.7.1
+Installing omniauth-oauth2 1.7.1
+Fetching omniauth-salesloft 1.0.0
+Installing omniauth-salesloft 1.0.0
+Fetching pry 0.14.0
+Installing pry 0.14.0
+Fetching pry-rails 0.3.9
+Installing pry-rails 0.3.9
+Fetching puma 3.12.6
+Installing puma 3.12.6 with native extensions
+Fetching sprockets 3.7.2
+Installing sprockets 3.7.2
+Fetching sprockets-rails 3.2.2
+Installing sprockets-rails 3.2.2
+Fetching rails 5.1.7
+Installing rails 5.1.7
+Fetching rubyzip 2.3.0
+Installing rubyzip 2.3.0
+Fetching sass-listen 4.0.0
+Installing sass-listen 4.0.0
+Fetching sass 3.7.4
+Installing sass 3.7.4
+Fetching tilt 2.0.10
+Installing tilt 2.0.10
+Fetching sass-rails 5.0.7
+Installing sass-rails 5.0.7
+Fetching selenium-webdriver 3.142.7
+Installing selenium-webdriver 3.142.7
+Fetching spring 2.1.1
+Installing spring 2.1.1
+Fetching spring-watcher-listen 2.0.1
+Installing spring-watcher-listen 2.0.1
+Fetching sqlite3 1.4.2
+Installing sqlite3 1.4.2 with native extensions
+Fetching turbolinks-source 5.2.0
+Installing turbolinks-source 5.2.0
+Fetching turbolinks 5.2.1
+Installing turbolinks 5.2.1
+Using tzinfo-data 1.2021.1
+Fetching uglifier 4.2.0
+Installing uglifier 4.2.0
+Fetching web-console 3.7.0
+Installing web-console 3.7.0
+Bundle complete! 23 Gemfile dependencies, 94 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+Post-install message from sass:
+
+Ruby Sass has reached end-of-life and should no longer be used.
+
+* If you use Sass as a command-line tool, we recommend using Dart Sass, the new
+  primary implementation: https://sass-lang.com/install
+
+* If you use Sass as a plug-in for a Ruby web framework, we recommend using the
+  sassc gem: https://github.com/sass/sassc-ruby#readme
+
+* For more details, please refer to the Sass blog:
+  https://sass-lang.com/blog/posts/7828841
+
+=======================
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (master)
+$ rake
+rake aborted!
+LoadError: cannot load such file -- test_helper
+C:/Users/steph/Code/DevelopmentInterviewStarterKit/test/models/token_test.rb:1:in `<top (required)>'
+Tasks: TOP => default => test
+(See full trace by running task with --trace)
+=======================
+=======================
+$ ruby --version
+ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x64-mingw32]
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (master)
+$ node --version
+v15.7.0
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (master)
+$ gem install bundle
+Successfully installed bundle-0.0.1
+Parsing documentation for bundle-0.0.1
+Installing ri documentation for bundle-0.0.1
+Done installing documentation for bundle after 1 seconds
+1 gem installed
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (master)
+$ bundle install
+Using rake 13.0.3
+Using concurrent-ruby 1.1.8
+Using i18n 1.8.9
+Using minitest 5.14.4
+Using thread_safe 0.3.6
+Using tzinfo 1.2.9
+Using activesupport 5.1.7
+Using builder 3.2.4
+Using erubi 1.10.0
+Using racc 1.5.2
+Using nokogiri 1.11.1 (x64-mingw32)
+Using rails-dom-testing 2.0.3
+Using crass 1.0.6
+Using loofah 2.9.0
+Using rails-html-sanitizer 1.3.0
+Using actionview 5.1.7
+Using rack 2.2.3
+Using rack-test 1.1.0
+Using actionpack 5.1.7
+Using nio4r 2.5.5
+Using websocket-extensions 0.1.5
+Using websocket-driver 0.6.5
+Using actioncable 5.1.7
+Using globalid 0.4.2
+Using activejob 5.1.7
+Using mini_mime 1.0.2
+Using mail 2.7.1
+Using actionmailer 5.1.7
+Using activemodel 5.1.7
+Using arel 8.0.0
+Using activerecord 5.1.7
+Using public_suffix 4.0.6
+Using addressable 2.7.0
+Using bcrypt 3.1.16
+Using bindex 0.8.1
+Using bundler 2.2.11
+Using byebug 11.1.3
+Using xpath 3.2.0
+Using capybara 2.18.0
+Using childprocess 3.0.0
+Using coderay 1.1.3
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Using coffee-script 2.4.1
+Using method_source 1.0.0
+Using thor 1.1.0
+Using railties 5.1.7
+Using coffee-rails 4.2.2
+Using orm_adapter 0.5.0
+Using responders 3.0.1
+Using warden 1.2.9
+Using devise 4.7.3
+Using dotenv 2.7.6
+Using dotenv-rails 2.7.6
+Using faraday-net_http 1.0.1
+Using multipart-post 2.1.1
+Using ruby2_keywords 0.0.4
+Using faraday 1.3.0
+Using ffi 1.14.2 (x64-mingw32)
+Using foreman 0.87.2
+Using hashie 4.1.0
+Using jbuilder 2.11.2
+Using jwt 2.2.2
+Using rb-fsevent 0.10.4
+Using rb-inotify 0.10.1
+Using ruby_dep 1.5.0
+Using listen 3.1.5
+Using multi_json 1.15.0
+Using multi_xml 0.6.0
+Using oauth2 1.4.4
+Using rack-protection 2.1.0
+Using omniauth 2.0.3
+Using omniauth-oauth2 1.7.1
+Using omniauth-salesloft 1.0.0
+Using pry 0.14.0
+Using pry-rails 0.3.9
+Using puma 3.12.6
+Using sprockets 3.7.2
+Using sprockets-rails 3.2.2
+Using rails 5.1.7
+Using rubyzip 2.3.0
+Using sass-listen 4.0.0
+Using sass 3.7.4
+Using tilt 2.0.10
+Using sass-rails 5.0.7
+Using selenium-webdriver 3.142.7
+Using spring 2.1.1
+Using spring-watcher-listen 2.0.1
+Using sqlite3 1.4.2
+Using turbolinks-source 5.2.0
+Using turbolinks 5.2.1
+Using tzinfo-data 1.2021.1
+Using uglifier 4.2.0
+Using web-console 3.7.0
+Bundle complete! 23 Gemfile dependencies, 94 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (master)
+$ npm install
+npm notice
+npm notice New minor version of npm available! 7.4.3 -> 7.6.0
+npm notice Changelog: <https://github.com/npm/cli/releases/tag/v7.6.0>
+npm notice Run `npm install -g npm@7.6.0` to update!
+npm notice
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (master)
+$ npm install -g npm@7.6.0
+
+added 3 packages, and audited 36 packages in 11s
+
+found 0 vulnerabilities
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (master)
+$ npm install
+
+up to date, audited 958 packages in 6s
+
+33 vulnerabilities (17 low, 5 moderate, 11 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+============================
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (master)
+$ bundle exec rake db:create && bundle exec rake db:migrate
+Created database 'db/development.sqlite3'
+Created database 'db/test.sqlite3'
+rake aborted!
+You are using an old OmniAuth version, please ensure you have 1.0.0.pr2 version or later installed.
+C:/Users/steph/Code/DevelopmentInterviewStarterKit/config/initializers/devise.rb:7:in `block in <top (required)>'
+C:/Users/steph/Code/DevelopmentInterviewStarterKit/config/initializers/devise.rb:5:in `<top (required)>'
+C:/Users/steph/Code/DevelopmentInterviewStarterKit/config/environment.rb:5:in `<top (required)>'
+Tasks: TOP => db:migrate => environment
+(See full trace by running task with --trace)
+==========================================
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (master)
+$ bundle exec foreman start
+02:27:28 web.1     | started with pid 2376
+02:27:28 webpack.1 | started with pid 3252
+02:27:36 webpack.1 |
+02:27:36 webpack.1 | > start
+02:27:36 webpack.1 | > webpack-dev-server "--port=5001"
+02:27:36 webpack.1 |
+02:27:36 webpack.1 | 'webpack-dev-server' is not recognized as an internal or external command,
+02:27:36 webpack.1 | operable program or batch file.
+02:27:36 webpack.1 | exited with code 1
+02:27:36 system    | sending SIGKILL to all processes
+02:27:36 system    | sending SIGKILL to web.1 at pid 2376
+02:27:36 web.1     | exited with code 0
+========================================
