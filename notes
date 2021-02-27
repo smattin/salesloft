@@ -485,3 +485,146 @@ says use this in Gemfile to fix above error
 gem 'devise', github: 'heartcombo/devise', branch: 'ca-omniauth-2'
 but Gemfile does not have devise. It is in
 C:\Users\steph\Code\DevelopmentInterviewStarterKit\config\initializers\devise.rb
+==========================================
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (main)
+$ git diff !$
+git diff Gemfile
+diff --git a/Gemfile b/Gemfile
+index 193831b..64010d5 100644
+--- a/Gemfile
++++ b/Gemfile
+@@ -14,7 +14,7 @@ gem 'uglifier', '>= 1.3.0'
+ gem 'coffee-rails', '~> 4.2'
+ gem 'turbolinks', '~> 5'
+ gem 'jbuilder', '~> 2.5'
+-gem 'devise'
++gem 'devise', github: 'heartcombo/devise', branch: 'ca-omniauth-2'
+ gem 'omniauth-salesloft'
+ gem 'omniauth'
+ gem 'foreman'
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (main)
+$ git add !$
+git add Gemfile
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (main)
+$ git commit -m'attempted fix for "old OmniAuth version" error from devise'
+[main 8b89e4e] attempted fix for "old OmniAuth version" error from devise
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (main)
+$ bundle install
+Fetching https://github.com/heartcombo/devise.git
+Fetching gem metadata from https://rubygems.org/............
+Resolving dependencies...
+Using rake 13.0.3
+Using concurrent-ruby 1.1.8
+Using i18n 1.8.9
+Using minitest 5.14.4
+Using thread_safe 0.3.6
+Using tzinfo 1.2.9
+Using activesupport 5.1.7
+Using builder 3.2.4
+Using erubi 1.10.0
+Using racc 1.5.2
+Using nokogiri 1.11.1 (x64-mingw32)
+Using rails-dom-testing 2.0.3
+Using crass 1.0.6
+Using loofah 2.9.0
+Using rails-html-sanitizer 1.3.0
+Using actionview 5.1.7
+Using rack 2.2.3
+Using rack-test 1.1.0
+Using actionpack 5.1.7
+Using nio4r 2.5.5
+Using websocket-extensions 0.1.5
+Using websocket-driver 0.6.5
+Using actioncable 5.1.7
+Using globalid 0.4.2
+Using activejob 5.1.7
+Using mini_mime 1.0.2
+Using mail 2.7.1
+Using actionmailer 5.1.7
+Using activemodel 5.1.7
+Using arel 8.0.0
+Using activerecord 5.1.7
+Using public_suffix 4.0.6
+Using addressable 2.7.0
+Using bcrypt 3.1.16
+Using bindex 0.8.1
+Using bundler 2.2.11
+Using byebug 11.1.3
+Using xpath 3.2.0
+Using capybara 2.18.0
+Using childprocess 3.0.0
+Using coderay 1.1.3
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Using coffee-script 2.4.1
+Using method_source 1.0.0
+Using thor 1.1.0
+Using railties 5.1.7
+Using coffee-rails 4.2.2
+Using orm_adapter 0.5.0
+Using responders 3.0.1
+Using warden 1.2.9
+Using devise 4.7.3 from https://github.com/heartcombo/devise.git (at ca-omniauth-2@e16d60d)
+Using dotenv 2.7.6
+Using dotenv-rails 2.7.6
+Using faraday-net_http 1.0.1
+Using multipart-post 2.1.1
+Using ruby2_keywords 0.0.4
+Using faraday 1.3.0
+Using ffi 1.14.2 (x64-mingw32)
+Using foreman 0.87.2
+Using hashie 4.1.0
+Using jbuilder 2.11.2
+Using jwt 2.2.2
+Using rb-fsevent 0.10.4
+Using rb-inotify 0.10.1
+Using ruby_dep 1.5.0
+Using listen 3.1.5
+Using multi_json 1.15.0
+Using multi_xml 0.6.0
+Using oauth2 1.4.4
+Using rack-protection 2.1.0
+Using omniauth 2.0.3
+Using omniauth-oauth2 1.7.1
+Using omniauth-salesloft 1.0.0
+Using pry 0.14.0
+Using pry-rails 0.3.9
+Using puma 3.12.6
+Using sprockets 3.7.2
+Using sprockets-rails 3.2.2
+Using rails 5.1.7
+Using rubyzip 2.3.0
+Using sass-listen 4.0.0
+Using sass 3.7.4
+Using tilt 2.0.10
+Using sass-rails 5.0.7
+Using selenium-webdriver 3.142.7
+Using spring 2.1.1
+Using spring-watcher-listen 2.0.1
+Using sqlite3 1.4.2
+Using turbolinks-source 5.2.0
+Using turbolinks 5.2.1
+Using tzinfo-data 1.2021.1
+Using uglifier 4.2.0
+Using web-console 3.7.0
+Bundle complete! 23 Gemfile dependencies, 94 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+==============================
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (main)
+$ bundle info devise
+  * devise (4.7.3 e16d60d)
+        Summary: Flexible authentication solution for Rails with Warden
+        Homepage: https://github.com/heartcombo/devise
+        Path: C:/Ruby27-x64/lib/ruby/gems/2.7.0/bundler/gems/devise-e16d60d0fedc
+
+=============================
+devise was in Gemfile, so updated to
+gem 'devise', github: 'heartcombo/devise', branch: 'ca-omniauth-2'
+using 'bundle install' as suggested in
+https://bundler.io/guides/updating_gems.html
+to avoid going deeper into dependency hell
