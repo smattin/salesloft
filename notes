@@ -400,3 +400,15 @@ $ bundle exec foreman start
 02:27:36 system    | sending SIGKILL to web.1 at pid 2376
 02:27:36 web.1     | exited with code 0
 ========================================
+$ npm install -g webpack-dev-server
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN deprecated chokidar@2.1.8: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.
+
+added 466 packages, and audited 467 packages in 45s
+
+21 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+=========================
