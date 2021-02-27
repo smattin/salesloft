@@ -1034,3 +1034,7 @@ Module not found: Error: Can't resolve 'fs' in 'C:\Users\steph\Code\DevelopmentI
  @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
 
 ==================
+NOTE: node_modules/url/url.js exists and looks fine, although it is reported missing in the browser console
+I assume webpack is hosed, but it is not clear how to restart it OK
+Maybe just restart bash?
+==========================================================================================================
