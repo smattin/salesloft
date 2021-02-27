@@ -811,3 +811,58 @@ $ bin/rails db:migrate RAILS_ENV=development
 
 
 </body></html>
+============================
+app.js is about 10K lines
+
+there are some console errors:
+
+app.js:1183 [WDS] Errors while compiling. Reload prevented.
+errors @ app.js:1183
+onmessage @ app.js:3130
+EventTarget.dispatchEvent @ app.js:3310
+(anonymous) @ app.js:4027
+SockJS._transportMessage @ app.js:4025
+EventEmitter.emit @ app.js:3226
+WebSocketTransport.ws.onmessage @ app.js:6101
+app.js:1189 ./client/src/index.js
+Module build failed: Error: Cannot find module 'core-js/library/fn/get-iterator'
+Require stack:
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\babel-runtime\core-js\get-iterator.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\babel-core\lib\transformation\file\index.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\babel-core\lib\api\node.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\babel-core\index.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\babel-loader\lib\index.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\loader-runner\lib\loadLoader.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\loader-runner\lib\LoaderRunner.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\webpack\lib\NormalModule.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\webpack\lib\NormalModuleFactory.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\webpack\lib\Compiler.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\webpack\lib\webpack.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\webpack-dev-server\lib\Server.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\webpack-dev-server\bin\webpack-dev-server.js
+- C:\Users\steph\AppData\Roaming\npm\node_modules\webpack-dev-server\node_modules\import-local\index.js
+- C:\Users\steph\AppData\Roaming\npm\node_modules\webpack-dev-server\bin\webpack-dev-server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:925:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:769:27)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (node:internal/modules/cjs/helpers:92:18)
+    at Object.<anonymous> (C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\babel-runtime\core-js\get-iterator.js:1:31)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (node:internal/modules/cjs/helpers:92:18)
+    at Object.<anonymous> (C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\babel-core\lib\transformation\file\index.js:6:21)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+ @ multi (webpack)-dev-server/client?http://localhost:5001 webpack/hot/only-dev-server ./client/src/index.js
+errors @ app.js:1189
+onmessage @ app.js:3130
+EventTarget.dispatchEvent @ app.js:3310
+(anonymous) @ app.js:4027
+SockJS._transportMessage @ app.js:4025
+EventEmitter.emit @ app.js:3226
+WebSocketTransport.ws.onmessage @ app.js:6101
