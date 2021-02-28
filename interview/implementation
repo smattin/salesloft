@@ -52,3 +52,5 @@ Wound up having to update sass-loader and node-sass. Maybe the latest node-gyp s
 Directory watching for updates relies on some symbolic links in assets/node_modules point back up to deps directories. As noted on "mix phx.server" startup on Windows this requires starting the terminal window with "Run as administrator" to work. Otherwise exceptions cause jarring empty updates of the app due to restarts'.
 ===============
 curl -H "Authorization: Bearer $SALESLOFT_APPLICATION_SECRET" https://api.salesloft.com/v2/people.json -O
+===============
+There are potentially 4 email addresses for each person in the JSON data, but only email_address and full_email_address are consistently filled and the latter may be syntheticly created from display_name and email_address.
