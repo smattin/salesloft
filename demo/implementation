@@ -1,0 +1,51 @@
+  mix archive.install hex phx_new
+  mix phx.new demo --live
+  mix phx.gen.cert
+  mix deps.get
+
+$ docker volume create pgdata
+pgdata
+
+$  docker run -dp 5432:5432 --name postgres -v pgdata:/var/lib/postgresql/data -e POSTGRES_PASSWORD=postgres postgres
+95b54702067f8a58cbae0ea9de866c23c071cc601f77eaf3eaae2caa77156e92
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/liveview/demo (main)
+$ docker logs postgres
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2021-02-28 12:05:29.884 UTC [1] LOG:  starting PostgreSQL 13.2 (Debian 13.2-1.pgdg100+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 8.3.0-6) 8.3.0, 64-bit
+2021-02-28 12:05:29.967 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2021-02-28 12:05:30.106 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2021-02-28 12:05:30.386 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2021-02-28 12:05:31.102 UTC [26] LOG:  database system was interrupted; last known up at 2021-02-28 12:02:54 UTC
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/liveview/demo (main)
+$ docker logs postgres
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2021-02-28 12:05:29.884 UTC [1] LOG:  starting PostgreSQL 13.2 (Debian 13.2-1.pgdg100+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 8.3.0-6) 8.3.0, 64-bit
+2021-02-28 12:05:29.967 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2021-02-28 12:05:30.106 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2021-02-28 12:05:30.386 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2021-02-28 12:05:31.102 UTC [26] LOG:  database system was interrupted; last known up at 2021-02-28 12:02:54 UTC
+2021-02-28 12:05:41.914 UTC [26] LOG:  database system was not properly shut down; automatic recovery in progress
+2021-02-28 12:05:42.048 UTC [26] LOG:  redo starts at 0/15CC940
+2021-02-28 12:05:42.052 UTC [26] LOG:  invalid record length at 0/15CCA28: wanted 24, got 0
+2021-02-28 12:05:42.052 UTC [26] LOG:  redo done at 0/15CC9F0
+2021-02-28 12:05:42.668 UTC [1] LOG:  database system is ready to accept connections
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/liveview/demo (main)
+$ mix test
+...
+
+Finished in 2.5 seconds
+3 tests, 0 failures
+
+Randomized with seed 204000
+
+===============
+There were some issues with node-gyp trying to use Python2, so installed 2.7.18
+Wound up having to update sass-loader and node-sass. Maybe the latest node-gyp supported Python3. In any case, for recompiling it seems to use VS build instead of gcc.
+
