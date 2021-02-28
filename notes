@@ -1,0 +1,1275 @@
+https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.7.2-1/rubyinstaller-devkit-2.7.2-1-x64.exe
+
+$ ruby -v
+ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x64-mingw32]
+
+$ cd Code/Dev*
+
+$ PATH=`pwd`/bin:/c/Ruby27-x64/bin:$PATH
+
+$ which rake
+/c/Users/steph/Code/DevelopmentInterviewStarterKit/bin/rake
+
+/c/Ruby27-x64/lib/ruby/gems/2.7.0/gems/rake-13.0.1
+
+rm Gemfile.lock
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (master)
+$ bundler install
+Fetching gem metadata from https://rubygems.org/............
+Resolving dependencies.................................
+Fetching rake 13.0.3
+Installing rake 13.0.3
+Using concurrent-ruby 1.1.8
+Fetching i18n 1.8.9
+Installing i18n 1.8.9
+Fetching minitest 5.14.4
+Installing minitest 5.14.4
+Fetching thread_safe 0.3.6
+Installing thread_safe 0.3.6
+Fetching tzinfo 1.2.9
+Installing tzinfo 1.2.9
+Fetching activesupport 5.1.7
+Installing activesupport 5.1.7
+Fetching builder 3.2.4
+Installing builder 3.2.4
+Fetching erubi 1.10.0
+Installing erubi 1.10.0
+Fetching racc 1.5.2
+Installing racc 1.5.2 with native extensions
+Fetching nokogiri 1.11.1 (x64-mingw32)
+Installing nokogiri 1.11.1 (x64-mingw32)
+Fetching rails-dom-testing 2.0.3
+Installing rails-dom-testing 2.0.3
+Fetching crass 1.0.6
+Installing crass 1.0.6
+Fetching loofah 2.9.0
+Installing loofah 2.9.0
+Fetching rails-html-sanitizer 1.3.0
+Installing rails-html-sanitizer 1.3.0
+Fetching actionview 5.1.7
+Installing actionview 5.1.7
+Fetching rack 2.2.3
+Installing rack 2.2.3
+Fetching rack-test 1.1.0
+Installing rack-test 1.1.0
+Fetching actionpack 5.1.7
+Installing actionpack 5.1.7
+Fetching nio4r 2.5.5
+Installing nio4r 2.5.5 with native extensions
+Fetching websocket-extensions 0.1.5
+Installing websocket-extensions 0.1.5
+Fetching websocket-driver 0.6.5
+Installing websocket-driver 0.6.5 with native extensions
+Fetching actioncable 5.1.7
+Installing actioncable 5.1.7
+Fetching globalid 0.4.2
+Installing globalid 0.4.2
+Fetching activejob 5.1.7
+Installing activejob 5.1.7
+Fetching mini_mime 1.0.2
+Installing mini_mime 1.0.2
+Fetching mail 2.7.1
+Installing mail 2.7.1
+Fetching actionmailer 5.1.7
+Installing actionmailer 5.1.7
+Fetching activemodel 5.1.7
+Installing activemodel 5.1.7
+Fetching arel 8.0.0
+Installing arel 8.0.0
+Fetching activerecord 5.1.7
+Installing activerecord 5.1.7
+Fetching public_suffix 4.0.6
+Installing public_suffix 4.0.6
+Fetching addressable 2.7.0
+Installing addressable 2.7.0
+Fetching bcrypt 3.1.16
+Installing bcrypt 3.1.16 with native extensions
+Fetching bindex 0.8.1
+Installing bindex 0.8.1 with native extensions
+Using bundler 2.2.11
+Fetching byebug 11.1.3
+Installing byebug 11.1.3 with native extensions
+Fetching xpath 3.2.0
+Installing xpath 3.2.0
+Fetching capybara 2.18.0
+Installing capybara 2.18.0
+Fetching childprocess 3.0.0
+Installing childprocess 3.0.0
+Fetching coderay 1.1.3
+Installing coderay 1.1.3
+Fetching coffee-script-source 1.12.2
+Installing coffee-script-source 1.12.2
+Fetching execjs 2.7.0
+Installing execjs 2.7.0
+Fetching coffee-script 2.4.1
+Installing coffee-script 2.4.1
+Fetching method_source 1.0.0
+Installing method_source 1.0.0
+Fetching thor 1.1.0
+Installing thor 1.1.0
+Fetching railties 5.1.7
+Installing railties 5.1.7
+Fetching coffee-rails 4.2.2
+Installing coffee-rails 4.2.2
+Fetching orm_adapter 0.5.0
+Installing orm_adapter 0.5.0
+Fetching responders 3.0.1
+Installing responders 3.0.1
+Fetching warden 1.2.9
+Installing warden 1.2.9
+Fetching devise 4.7.3
+Installing devise 4.7.3
+Fetching dotenv 2.7.6
+Installing dotenv 2.7.6
+Fetching dotenv-rails 2.7.6
+Installing dotenv-rails 2.7.6
+Fetching faraday-net_http 1.0.1
+Installing faraday-net_http 1.0.1
+Fetching multipart-post 2.1.1
+Installing multipart-post 2.1.1
+Fetching ruby2_keywords 0.0.4
+Installing ruby2_keywords 0.0.4
+Fetching faraday 1.3.0
+Installing faraday 1.3.0
+Fetching ffi 1.14.2 (x64-mingw32)
+Installing ffi 1.14.2 (x64-mingw32)
+Fetching foreman 0.87.2
+Installing foreman 0.87.2
+Fetching hashie 4.1.0
+Installing hashie 4.1.0
+Fetching jbuilder 2.11.2
+Installing jbuilder 2.11.2
+Fetching jwt 2.2.2
+Installing jwt 2.2.2
+Fetching rb-fsevent 0.10.4
+Installing rb-fsevent 0.10.4
+Fetching rb-inotify 0.10.1
+Installing rb-inotify 0.10.1
+Fetching ruby_dep 1.5.0
+Installing ruby_dep 1.5.0
+Fetching listen 3.1.5
+Installing listen 3.1.5
+Fetching multi_json 1.15.0
+Installing multi_json 1.15.0
+Fetching multi_xml 0.6.0
+Installing multi_xml 0.6.0
+Fetching oauth2 1.4.4
+Installing oauth2 1.4.4
+Fetching rack-protection 2.1.0
+Installing rack-protection 2.1.0
+Fetching omniauth 2.0.3
+Installing omniauth 2.0.3
+Fetching omniauth-oauth2 1.7.1
+Installing omniauth-oauth2 1.7.1
+Fetching omniauth-salesloft 1.0.0
+Installing omniauth-salesloft 1.0.0
+Fetching pry 0.14.0
+Installing pry 0.14.0
+Fetching pry-rails 0.3.9
+Installing pry-rails 0.3.9
+Fetching puma 3.12.6
+Installing puma 3.12.6 with native extensions
+Fetching sprockets 3.7.2
+Installing sprockets 3.7.2
+Fetching sprockets-rails 3.2.2
+Installing sprockets-rails 3.2.2
+Fetching rails 5.1.7
+Installing rails 5.1.7
+Fetching rubyzip 2.3.0
+Installing rubyzip 2.3.0
+Fetching sass-listen 4.0.0
+Installing sass-listen 4.0.0
+Fetching sass 3.7.4
+Installing sass 3.7.4
+Fetching tilt 2.0.10
+Installing tilt 2.0.10
+Fetching sass-rails 5.0.7
+Installing sass-rails 5.0.7
+Fetching selenium-webdriver 3.142.7
+Installing selenium-webdriver 3.142.7
+Fetching spring 2.1.1
+Installing spring 2.1.1
+Fetching spring-watcher-listen 2.0.1
+Installing spring-watcher-listen 2.0.1
+Fetching sqlite3 1.4.2
+Installing sqlite3 1.4.2 with native extensions
+Fetching turbolinks-source 5.2.0
+Installing turbolinks-source 5.2.0
+Fetching turbolinks 5.2.1
+Installing turbolinks 5.2.1
+Using tzinfo-data 1.2021.1
+Fetching uglifier 4.2.0
+Installing uglifier 4.2.0
+Fetching web-console 3.7.0
+Installing web-console 3.7.0
+Bundle complete! 23 Gemfile dependencies, 94 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+Post-install message from sass:
+
+Ruby Sass has reached end-of-life and should no longer be used.
+
+* If you use Sass as a command-line tool, we recommend using Dart Sass, the new
+  primary implementation: https://sass-lang.com/install
+
+* If you use Sass as a plug-in for a Ruby web framework, we recommend using the
+  sassc gem: https://github.com/sass/sassc-ruby#readme
+
+* For more details, please refer to the Sass blog:
+  https://sass-lang.com/blog/posts/7828841
+
+=======================
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (master)
+$ rake
+rake aborted!
+LoadError: cannot load such file -- test_helper
+C:/Users/steph/Code/DevelopmentInterviewStarterKit/test/models/token_test.rb:1:in `<top (required)>'
+Tasks: TOP => default => test
+(See full trace by running task with --trace)
+=======================
+=======================
+$ ruby --version
+ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x64-mingw32]
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (master)
+$ node --version
+v15.7.0
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (master)
+$ gem install bundle
+Successfully installed bundle-0.0.1
+Parsing documentation for bundle-0.0.1
+Installing ri documentation for bundle-0.0.1
+Done installing documentation for bundle after 1 seconds
+1 gem installed
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (master)
+$ bundle install
+Using rake 13.0.3
+Using concurrent-ruby 1.1.8
+Using i18n 1.8.9
+Using minitest 5.14.4
+Using thread_safe 0.3.6
+Using tzinfo 1.2.9
+Using activesupport 5.1.7
+Using builder 3.2.4
+Using erubi 1.10.0
+Using racc 1.5.2
+Using nokogiri 1.11.1 (x64-mingw32)
+Using rails-dom-testing 2.0.3
+Using crass 1.0.6
+Using loofah 2.9.0
+Using rails-html-sanitizer 1.3.0
+Using actionview 5.1.7
+Using rack 2.2.3
+Using rack-test 1.1.0
+Using actionpack 5.1.7
+Using nio4r 2.5.5
+Using websocket-extensions 0.1.5
+Using websocket-driver 0.6.5
+Using actioncable 5.1.7
+Using globalid 0.4.2
+Using activejob 5.1.7
+Using mini_mime 1.0.2
+Using mail 2.7.1
+Using actionmailer 5.1.7
+Using activemodel 5.1.7
+Using arel 8.0.0
+Using activerecord 5.1.7
+Using public_suffix 4.0.6
+Using addressable 2.7.0
+Using bcrypt 3.1.16
+Using bindex 0.8.1
+Using bundler 2.2.11
+Using byebug 11.1.3
+Using xpath 3.2.0
+Using capybara 2.18.0
+Using childprocess 3.0.0
+Using coderay 1.1.3
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Using coffee-script 2.4.1
+Using method_source 1.0.0
+Using thor 1.1.0
+Using railties 5.1.7
+Using coffee-rails 4.2.2
+Using orm_adapter 0.5.0
+Using responders 3.0.1
+Using warden 1.2.9
+Using devise 4.7.3
+Using dotenv 2.7.6
+Using dotenv-rails 2.7.6
+Using faraday-net_http 1.0.1
+Using multipart-post 2.1.1
+Using ruby2_keywords 0.0.4
+Using faraday 1.3.0
+Using ffi 1.14.2 (x64-mingw32)
+Using foreman 0.87.2
+Using hashie 4.1.0
+Using jbuilder 2.11.2
+Using jwt 2.2.2
+Using rb-fsevent 0.10.4
+Using rb-inotify 0.10.1
+Using ruby_dep 1.5.0
+Using listen 3.1.5
+Using multi_json 1.15.0
+Using multi_xml 0.6.0
+Using oauth2 1.4.4
+Using rack-protection 2.1.0
+Using omniauth 2.0.3
+Using omniauth-oauth2 1.7.1
+Using omniauth-salesloft 1.0.0
+Using pry 0.14.0
+Using pry-rails 0.3.9
+Using puma 3.12.6
+Using sprockets 3.7.2
+Using sprockets-rails 3.2.2
+Using rails 5.1.7
+Using rubyzip 2.3.0
+Using sass-listen 4.0.0
+Using sass 3.7.4
+Using tilt 2.0.10
+Using sass-rails 5.0.7
+Using selenium-webdriver 3.142.7
+Using spring 2.1.1
+Using spring-watcher-listen 2.0.1
+Using sqlite3 1.4.2
+Using turbolinks-source 5.2.0
+Using turbolinks 5.2.1
+Using tzinfo-data 1.2021.1
+Using uglifier 4.2.0
+Using web-console 3.7.0
+Bundle complete! 23 Gemfile dependencies, 94 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (master)
+$ npm install
+npm notice
+npm notice New minor version of npm available! 7.4.3 -> 7.6.0
+npm notice Changelog: <https://github.com/npm/cli/releases/tag/v7.6.0>
+npm notice Run `npm install -g npm@7.6.0` to update!
+npm notice
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (master)
+$ npm install -g npm@7.6.0
+
+added 3 packages, and audited 36 packages in 11s
+
+found 0 vulnerabilities
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (master)
+$ npm install
+
+up to date, audited 958 packages in 6s
+
+33 vulnerabilities (17 low, 5 moderate, 11 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+============================
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (master)
+$ bundle exec rake db:create && bundle exec rake db:migrate
+Created database 'db/development.sqlite3'
+Created database 'db/test.sqlite3'
+rake aborted!
+You are using an old OmniAuth version, please ensure you have 1.0.0.pr2 version or later installed.
+C:/Users/steph/Code/DevelopmentInterviewStarterKit/config/initializers/devise.rb:7:in `block in <top (required)>'
+C:/Users/steph/Code/DevelopmentInterviewStarterKit/config/initializers/devise.rb:5:in `<top (required)>'
+C:/Users/steph/Code/DevelopmentInterviewStarterKit/config/environment.rb:5:in `<top (required)>'
+Tasks: TOP => db:migrate => environment
+(See full trace by running task with --trace)
+==========================================
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (master)
+$ bundle exec foreman start
+02:27:28 web.1     | started with pid 2376
+02:27:28 webpack.1 | started with pid 3252
+02:27:36 webpack.1 |
+02:27:36 webpack.1 | > start
+02:27:36 webpack.1 | > webpack-dev-server "--port=5001"
+02:27:36 webpack.1 |
+02:27:36 webpack.1 | 'webpack-dev-server' is not recognized as an internal or external command,
+02:27:36 webpack.1 | operable program or batch file.
+02:27:36 webpack.1 | exited with code 1
+02:27:36 system    | sending SIGKILL to all processes
+02:27:36 system    | sending SIGKILL to web.1 at pid 2376
+02:27:36 web.1     | exited with code 0
+========================================
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (main)
+$ bundle exec foreman start
+02:59:52 web.1     | started with pid 7352
+02:59:52 webpack.1 | started with pid 10548
+03:00:01 webpack.1 |
+03:00:01 webpack.1 | > start
+03:00:01 webpack.1 | > webpack-dev-server "--port=5001"
+03:00:01 webpack.1 |
+03:00:37 web.1     | => Booting Puma
+03:00:37 web.1     | => Rails 5.1.7 application starting in development
+03:00:37 web.1     | => Run `rails server -h` for more startup options
+03:00:47 web.1     | Exiting
+03:00:47 web.1     | C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/devise-4.7.3/lib/devise/omniauth.rb:12:in `<top (required)>': You are using an old OmniAuth version, please ensure you have 1.0.0.pr2 version or later installed. (RuntimeError)
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/activesupport-5.1.7/lib/active_support/dependencies.rb:292:in `require'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/activesupport-5.1.7/lib/active_support/dependencies.rb:292:in `block in require'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/activesupport-5.1.7/lib/active_support/dependencies.rb:258:in `load_dependency'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/activesupport-5.1.7/lib/active_support/dependencies.rb:292:in `require'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/devise-4.7.3/lib/devise.rb:443:in `omniauth'
+03:00:47 web.1     |    from C:/Users/steph/Code/DevelopmentInterviewStarterKit/config/initializers/devise.rb:7:in `block in <top (required)>'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/devise-4.7.3/lib/devise.rb:307:in `setup'
+03:00:47 web.1     |    from C:/Users/steph/Code/DevelopmentInterviewStarterKit/config/initializers/devise.rb:5:in `<top (required)>'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/activesupport-5.1.7/lib/active_support/dependencies.rb:286:in `load'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/activesupport-5.1.7/lib/active_support/dependencies.rb:286:in `block in load'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/activesupport-5.1.7/lib/active_support/dependencies.rb:258:in `load_dependency'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/activesupport-5.1.7/lib/active_support/dependencies.rb:286:in `load'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/engine.rb:655:in `block in load_config_initializer'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/activesupport-5.1.7/lib/active_support/notifications.rb:168:in `instrument'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/engine.rb:654:in `load_config_initializer'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/engine.rb:612:in `block (2 levels) in <class:Engine>'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/engine.rb:611:in `each'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/engine.rb:611:in `block in <class:Engine>'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/initializable.rb:30:in `instance_exec'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/initializable.rb:30:in `run'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/initializable.rb:59:in `block in run_initializers'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:228:in `block in tsort_each'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:422:in `block (2 levels) in each_strongly_connected_component_from'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:431:in `each_strongly_connected_component_from'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:421:in `block in each_strongly_connected_component_from'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/initializable.rb:48:in `each'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/initializable.rb:48:in `tsort_each_child'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:415:in `call'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:415:in `each_strongly_connected_component_from'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:349:in `block in each_strongly_connected_component'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:347:in `each'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:347:in `call'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:347:in `each_strongly_connected_component'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:226:in `tsort_each'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/2.7.0/tsort.rb:205:in `tsort_each'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/initializable.rb:58:in `run_initializers'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/application.rb:353:in `initialize!'
+03:00:47 web.1     |    from C:/Users/steph/Code/DevelopmentInterviewStarterKit/config/environment.rb:5:in `<top (required)>'
+03:00:47 web.1     |    from config.ru:3:in `require_relative'
+03:00:47 web.1     |    from config.ru:3:in `block in <main>'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:116:in `eval'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:116:in `new_from_string'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:105:in `load_file'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/rack-2.2.3/lib/rack/builder.rb:66:in `parse_file'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/rack-2.2.3/lib/rack/server.rb:349:in `build_app_and_options_from_config'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/rack-2.2.3/lib/rack/server.rb:249:in `app'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/commands/server/server_command.rb:24:in `app'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/rack-2.2.3/lib/rack/server.rb:422:in `wrapped_app'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/commands/server/server_command.rb:80:in `log_to_stdout'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/commands/server/server_command.rb:42:in `start'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/commands/server/server_command.rb:135:in `block in perform'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/commands/server/server_command.rb:130:in `tap'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/commands/server/server_command.rb:130:in `perform'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/thor-1.1.0/lib/thor/command.rb:27:in `run'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/thor-1.1.0/lib/thor/invocation.rb:127:in `invoke_command'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/thor-1.1.0/lib/thor.rb:392:in `dispatch'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/command/base.rb:63:in `perform'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/command.rb:44:in `invoke'
+03:00:47 web.1     |    from C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-5.1.7/lib/rails/commands.rb:16:in `<top (required)>'
+03:00:47 web.1     |    from bin/rails:9:in `require'
+03:00:47 web.1     |    from bin/rails:9:in `<main>'
+03:00:48 web.1     | exited with code 1
+03:00:48 system    | sending SIGKILL to all processes
+03:00:48 system    | sending SIGKILL to webpack.1 at pid 10548
+03:00:48 webpack.1 | exited with code 0
+=======================================
+https://stackoverflow.com/questions/65702896/latest-omniauth-facebook-gem-breaks-devise
+says use this in Gemfile to fix above error
+gem 'devise', github: 'heartcombo/devise', branch: 'ca-omniauth-2'
+but Gemfile does not have devise. It is in
+C:\Users\steph\Code\DevelopmentInterviewStarterKit\config\initializers\devise.rb
+==========================================
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (main)
+$ git diff !$
+git diff Gemfile
+diff --git a/Gemfile b/Gemfile
+index 193831b..64010d5 100644
+--- a/Gemfile
++++ b/Gemfile
+@@ -14,7 +14,7 @@ gem 'uglifier', '>= 1.3.0'
+ gem 'coffee-rails', '~> 4.2'
+ gem 'turbolinks', '~> 5'
+ gem 'jbuilder', '~> 2.5'
+-gem 'devise'
++gem 'devise', github: 'heartcombo/devise', branch: 'ca-omniauth-2'
+ gem 'omniauth-salesloft'
+ gem 'omniauth'
+ gem 'foreman'
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (main)
+$ git add !$
+git add Gemfile
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (main)
+$ git commit -m'attempted fix for "old OmniAuth version" error from devise'
+[main 8b89e4e] attempted fix for "old OmniAuth version" error from devise
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (main)
+$ bundle install
+Fetching https://github.com/heartcombo/devise.git
+Fetching gem metadata from https://rubygems.org/............
+Resolving dependencies...
+Using rake 13.0.3
+Using concurrent-ruby 1.1.8
+Using i18n 1.8.9
+Using minitest 5.14.4
+Using thread_safe 0.3.6
+Using tzinfo 1.2.9
+Using activesupport 5.1.7
+Using builder 3.2.4
+Using erubi 1.10.0
+Using racc 1.5.2
+Using nokogiri 1.11.1 (x64-mingw32)
+Using rails-dom-testing 2.0.3
+Using crass 1.0.6
+Using loofah 2.9.0
+Using rails-html-sanitizer 1.3.0
+Using actionview 5.1.7
+Using rack 2.2.3
+Using rack-test 1.1.0
+Using actionpack 5.1.7
+Using nio4r 2.5.5
+Using websocket-extensions 0.1.5
+Using websocket-driver 0.6.5
+Using actioncable 5.1.7
+Using globalid 0.4.2
+Using activejob 5.1.7
+Using mini_mime 1.0.2
+Using mail 2.7.1
+Using actionmailer 5.1.7
+Using activemodel 5.1.7
+Using arel 8.0.0
+Using activerecord 5.1.7
+Using public_suffix 4.0.6
+Using addressable 2.7.0
+Using bcrypt 3.1.16
+Using bindex 0.8.1
+Using bundler 2.2.11
+Using byebug 11.1.3
+Using xpath 3.2.0
+Using capybara 2.18.0
+Using childprocess 3.0.0
+Using coderay 1.1.3
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Using coffee-script 2.4.1
+Using method_source 1.0.0
+Using thor 1.1.0
+Using railties 5.1.7
+Using coffee-rails 4.2.2
+Using orm_adapter 0.5.0
+Using responders 3.0.1
+Using warden 1.2.9
+Using devise 4.7.3 from https://github.com/heartcombo/devise.git (at ca-omniauth-2@e16d60d)
+Using dotenv 2.7.6
+Using dotenv-rails 2.7.6
+Using faraday-net_http 1.0.1
+Using multipart-post 2.1.1
+Using ruby2_keywords 0.0.4
+Using faraday 1.3.0
+Using ffi 1.14.2 (x64-mingw32)
+Using foreman 0.87.2
+Using hashie 4.1.0
+Using jbuilder 2.11.2
+Using jwt 2.2.2
+Using rb-fsevent 0.10.4
+Using rb-inotify 0.10.1
+Using ruby_dep 1.5.0
+Using listen 3.1.5
+Using multi_json 1.15.0
+Using multi_xml 0.6.0
+Using oauth2 1.4.4
+Using rack-protection 2.1.0
+Using omniauth 2.0.3
+Using omniauth-oauth2 1.7.1
+Using omniauth-salesloft 1.0.0
+Using pry 0.14.0
+Using pry-rails 0.3.9
+Using puma 3.12.6
+Using sprockets 3.7.2
+Using sprockets-rails 3.2.2
+Using rails 5.1.7
+Using rubyzip 2.3.0
+Using sass-listen 4.0.0
+Using sass 3.7.4
+Using tilt 2.0.10
+Using sass-rails 5.0.7
+Using selenium-webdriver 3.142.7
+Using spring 2.1.1
+Using spring-watcher-listen 2.0.1
+Using sqlite3 1.4.2
+Using turbolinks-source 5.2.0
+Using turbolinks 5.2.1
+Using tzinfo-data 1.2021.1
+Using uglifier 4.2.0
+Using web-console 3.7.0
+Bundle complete! 23 Gemfile dependencies, 94 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+==============================
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (main)
+$ bundle info devise
+  * devise (4.7.3 e16d60d)
+        Summary: Flexible authentication solution for Rails with Warden
+        Homepage: https://github.com/heartcombo/devise
+        Path: C:/Ruby27-x64/lib/ruby/gems/2.7.0/bundler/gems/devise-e16d60d0fedc
+
+=============================
+devise was in Gemfile, so updated to
+gem 'devise', github: 'heartcombo/devise', branch: 'ca-omniauth-2'
+using 'bundle install' as suggested in
+https://bundler.io/guides/updating_gems.html
+to avoid going deeper into dependency hell
+=======
+$ npm install -g webpack-dev-server
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN deprecated chokidar@2.1.8: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.
+
+added 466 packages, and audited 467 packages in 45s
+
+21 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+=========================
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (main)
+$  bundle exec foreman start
+03:46:12 web.1     | started with pid 8788
+03:46:12 webpack.1 | started with pid 8688
+03:46:22 webpack.1 |
+03:46:22 webpack.1 | > start
+03:46:22 webpack.1 | > webpack-dev-server "--port=5001"
+03:46:22 webpack.1 |
+03:46:48 web.1     | => Booting Puma
+03:46:48 web.1     | => Rails 5.1.7 application starting in development
+03:46:48 web.1     | => Run `rails server -h` for more startup options
+03:46:54 web.1     |   Please add the following to your Gemfile to avoid polling for changes:
+03:46:54 web.1     |     gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+03:47:02 web.1     |   Please add the following to your Gemfile to avoid polling for changes:
+03:47:02 web.1     |     gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+03:47:05 web.1     | *** SIGUSR2 not implemented, signal based restart unavailable!
+03:47:05 web.1     | *** SIGUSR1 not implemented, signal based restart unavailable!
+03:47:05 web.1     | *** SIGHUP not implemented, signal based logs reopening unavailable!
+03:47:05 web.1     | Puma starting in single mode...
+03:47:05 web.1     | * Version 3.12.6 (ruby 2.7.2-p137), codename: Llamas in Pajamas
+03:47:05 web.1     | * Min threads: 5, max threads: 5
+03:47:05 web.1     | * Environment: development
+03:47:05 webpack.1 | node:events:356
+03:47:05 webpack.1 |       throw er; // Unhandled 'error' event
+03:47:05 webpack.1 |       ^
+03:47:05 webpack.1 |
+03:47:05 webpack.1 | Error: listen EADDRINUSE: address already in use 127.0.0.1:5001
+03:47:05 webpack.1 |     at Server.setupListenHandle [as _listen2] (node:net:1312:16)
+03:47:05 webpack.1 |     at listenInCluster (node:net:1360:12)
+03:47:05 webpack.1 |     at GetAddrInfoReqWrap.doListen [as callback] (node:net:1498:7)
+03:47:05 webpack.1 |     at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:8)
+03:47:05 webpack.1 | Emitted 'error' event on Server instance at:
+03:47:05 webpack.1 |     at emitErrorNT (node:net:1339:8)
+03:47:05 webpack.1 |     at processTicksAndRejections (node:internal/process/task_queues:81:21) {
+03:47:05 webpack.1 |   code: 'EADDRINUSE',
+03:47:05 web.1     | * Listening on tcp://localhost:5000
+03:47:05 webpack.1 |   errno: -4091,
+03:47:05 webpack.1 |   syscall: 'listen',
+03:47:05 webpack.1 |   address: '127.0.0.1',
+03:47:05 web.1     | Use Ctrl-C to stop
+03:47:05 webpack.1 |   port: 5001
+03:47:05 webpack.1 | }
+03:47:06 webpack.1 | exited with code 1
+03:47:06 system    | sending SIGKILL to all processes
+03:47:06 system    | sending SIGKILL to web.1 at pid 8788
+03:47:06 web.1     | exited with code 0
+===========================
+dunno who is using port 5001, but 5005 seems open
+===============================================
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (main)
+$ vi .env
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (main)
+$  bundle exec foreman start
+03:53:47 web.1     | started with pid 12136
+03:53:47 webpack.1 | started with pid 1204
+03:53:48 webpack.1 |
+03:53:48 webpack.1 | > start
+03:53:48 webpack.1 | > webpack-dev-server "--port=5005"
+03:53:48 webpack.1 |
+03:53:52 webpack.1 | Project is running at http://localhost:5005/
+03:53:52 webpack.1 | webpack output is served from /
+03:53:52 webpack.1 | Content not from webpack is served from C:\Users\steph\Code\DevelopmentInterviewStarterKit\client\dist
+03:53:53 webpack.1 | Hash: 3518c44a15714b74aade
+03:53:53 webpack.1 | Version: webpack 3.12.0
+03:53:53 webpack.1 | Time: 1022ms
+03:53:53 webpack.1 |  Asset    Size  Chunks                    Chunk Names
+03:53:53 webpack.1 | app.js  357 kB       0  [emitted]  [big]  main
+03:53:53 webpack.1 |    [0] (webpack)/hot/log.js 1.04 kB {0} [built]
+03:53:53 webpack.1 |    [3] (webpack)/hot/emitter.js 77 bytes {0} [built]
+03:53:53 webpack.1 |    [4] multi (webpack)-dev-server/client?http://localhost:5005 webpack/hot/only-dev-server ./client/src/index.js 52 bytes {0} [built]
+03:53:53 webpack.1 |    [5] (webpack)-dev-server/client?http://localhost:5005 7.93 kB {0} [built]
+03:53:53 webpack.1 |    [6] ./node_modules/url/url.js 23.3 kB {0} [built]
+03:53:53 webpack.1 |    [7] ./node_modules/node-libs-browser/node_modules/punycode/punycode.js 14.7 kB {0} [built]
+03:53:53 webpack.1 |    [9] ./node_modules/url/util.js 314 bytes {0} [built]
+03:53:53 webpack.1 |   [13] ./node_modules/strip-ansi/index.js 161 bytes {0} [built]
+03:53:53 webpack.1 |   [15] ./node_modules/loglevel/lib/loglevel.js 7.86 kB {0} [built]
+03:53:53 webpack.1 |   [16] (webpack)-dev-server/client/socket.js 1.08 kB {0} [built]
+03:53:53 webpack.1 |   [18] (webpack)-dev-server/client/overlay.js 3.67 kB {0} [built]
+03:53:53 webpack.1 |   [23] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+03:53:53 webpack.1 |   [25] (webpack)/hot/only-dev-server.js 2.37 kB {0} [built]
+03:53:53 webpack.1 |   [26] (webpack)/hot/log-apply-result.js 1.31 kB {0} [built]
+03:53:53 webpack.1 |   [27] ./client/src/index.js 2.98 kB {0} [built] [failed] [1 error]
+03:53:53 webpack.1 |     + 13 hidden modules
+03:53:53 webpack.1 |
+03:53:53 webpack.1 | ERROR in ./client/src/index.js
+03:53:53 webpack.1 | Module build failed: Error: Cannot find module 'core-js/library/fn/get-iterator'
+03:53:53 webpack.1 | Require stack:
+03:53:53 webpack.1 | - C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\babel-runtime\core-js\get-iterator.js
+03:53:53 webpack.1 | - C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\babel-core\lib\transformation\file\index.js
+03:53:53 webpack.1 | - C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\babel-core\lib\api\node.js
+03:53:53 webpack.1 | - C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\babel-core\index.js
+03:53:53 webpack.1 | - C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\babel-loader\lib\index.js
+03:53:53 webpack.1 | - C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\loader-runner\lib\loadLoader.js
+03:53:53 webpack.1 | - C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\loader-runner\lib\LoaderRunner.js
+03:53:53 webpack.1 | - C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\webpack\lib\NormalModule.js
+03:53:53 webpack.1 | - C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\webpack\lib\NormalModuleFactory.js
+03:53:53 webpack.1 | - C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\webpack\lib\Compiler.js
+03:53:53 webpack.1 | - C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\webpack\lib\webpack.js
+03:53:53 webpack.1 | - C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\webpack-dev-server\lib\Server.js
+03:53:53 webpack.1 | - C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\webpack-dev-server\bin\webpack-dev-server.js
+03:53:53 webpack.1 | - C:\Users\steph\AppData\Roaming\npm\node_modules\webpack-dev-server\node_modules\import-local\index.js
+03:53:53 webpack.1 | - C:\Users\steph\AppData\Roaming\npm\node_modules\webpack-dev-server\bin\webpack-dev-server.js
+03:53:53 webpack.1 |     at Function.Module._resolveFilename (node:internal/modules/cjs/loader:925:15)
+03:53:53 webpack.1 |     at Function.Module._load (node:internal/modules/cjs/loader:769:27)
+03:53:53 webpack.1 |     at Module.require (node:internal/modules/cjs/loader:997:19)
+03:53:53 webpack.1 |     at require (node:internal/modules/cjs/helpers:92:18)
+03:53:53 webpack.1 |     at Object.<anonymous> (C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\babel-runtime\core-js\get-iterator.js:1:31)
+03:53:53 webpack.1 |     at Module._compile (node:internal/modules/cjs/loader:1108:14)
+03:53:53 webpack.1 |     at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+03:53:53 webpack.1 |     at Module.load (node:internal/modules/cjs/loader:973:32)
+03:53:53 webpack.1 |     at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+03:53:53 webpack.1 |     at Module.require (node:internal/modules/cjs/loader:997:19)
+03:53:53 webpack.1 |     at require (node:internal/modules/cjs/helpers:92:18)
+03:53:53 webpack.1 |     at Object.<anonymous> (C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\babel-core\lib\transformation\file\index.js:6:21)
+03:53:53 webpack.1 |     at Module._compile (node:internal/modules/cjs/loader:1108:14)
+03:53:53 webpack.1 |     at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+03:53:53 webpack.1 |     at Module.load (node:internal/modules/cjs/loader:973:32)
+03:53:53 webpack.1 |     at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+03:53:53 webpack.1 |  @ multi (webpack)-dev-server/client?http://localhost:5005 webpack/hot/only-dev-server ./client/src/index.js
+03:53:53 webpack.1 | webpack: Failed to compile.
+03:53:59 web.1     | => Booting Puma
+03:53:59 web.1     | => Rails 5.1.7 application starting in development
+03:53:59 web.1     | => Run `rails server -h` for more startup options
+03:54:00 web.1     |   Please add the following to your Gemfile to avoid polling for changes:
+03:54:00 web.1     |     gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+03:54:01 web.1     |   Please add the following to your Gemfile to avoid polling for changes:
+03:54:01 web.1     |     gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+03:54:01 web.1     | A server is already running. Check C:/Users/steph/Code/DevelopmentInterviewStarterKit/tmp/pids/server.pid.
+03:54:01 web.1     | Exiting
+03:54:02 web.1     | exited with code 1
+03:54:02 system    | sending SIGKILL to all processes
+03:54:02 system    | sending SIGKILL to webpack.1 at pid 1204
+03:54:02 webpack.1 | exited with code 0
+
+========================================
+127.0.0.1:5000 showed
+ActiveRecord:PendingMigration error
+=======================================
+$ bin/rails db:migrate RAILS_ENV=development
+  Please add the following to your Gemfile to avoid polling for changes:
+    gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+  Please add the following to your Gemfile to avoid polling for changes:
+    gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+== 20180114204921 DeviseCreateUsers: migrating ================================
+-- create_table(:users)
+   -> 0.0160s
+-- add_index(:users, :email, {:unique=>true})
+   -> 0.0009s
+== 20180114204921 DeviseCreateUsers: migrated (0.0170s) =======================
+
+== 20180114224612 CreateTokens: migrating =====================================
+-- create_table(:tokens)
+   -> 0.0044s
+== 20180114224612 CreateTokens: migrated (0.0046s) ============================
+
+=========================
+127.0.0.1:5000 looks blank, but seems to be delivering HTML
+
+<html><head>
+  <title>SalesLoft Integration</title>
+</head>
+<body>
+
+<div id="root"></div>
+
+<script src="http://localhost:5001/app.js"></script>
+
+
+</body></html>
+============================
+app.js is about 10K lines
+
+there are some console errors:
+
+app.js:1183 [WDS] Errors while compiling. Reload prevented.
+errors @ app.js:1183
+onmessage @ app.js:3130
+EventTarget.dispatchEvent @ app.js:3310
+(anonymous) @ app.js:4027
+SockJS._transportMessage @ app.js:4025
+EventEmitter.emit @ app.js:3226
+WebSocketTransport.ws.onmessage @ app.js:6101
+app.js:1189 ./client/src/index.js
+Module build failed: Error: Cannot find module 'core-js/library/fn/get-iterator'
+Require stack:
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\babel-runtime\core-js\get-iterator.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\babel-core\lib\transformation\file\index.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\babel-core\lib\api\node.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\babel-core\index.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\babel-loader\lib\index.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\loader-runner\lib\loadLoader.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\loader-runner\lib\LoaderRunner.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\webpack\lib\NormalModule.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\webpack\lib\NormalModuleFactory.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\webpack\lib\Compiler.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\webpack\lib\webpack.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\webpack-dev-server\lib\Server.js
+- C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\webpack-dev-server\bin\webpack-dev-server.js
+- C:\Users\steph\AppData\Roaming\npm\node_modules\webpack-dev-server\node_modules\import-local\index.js
+- C:\Users\steph\AppData\Roaming\npm\node_modules\webpack-dev-server\bin\webpack-dev-server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:925:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:769:27)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (node:internal/modules/cjs/helpers:92:18)
+    at Object.<anonymous> (C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\babel-runtime\core-js\get-iterator.js:1:31)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (node:internal/modules/cjs/helpers:92:18)
+    at Object.<anonymous> (C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\babel-core\lib\transformation\file\index.js:6:21)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+ @ multi (webpack)-dev-server/client?http://localhost:5001 webpack/hot/only-dev-server ./client/src/index.js
+errors @ app.js:1189
+onmessage @ app.js:3130
+EventTarget.dispatchEvent @ app.js:3310
+(anonymous) @ app.js:4027
+SockJS._transportMessage @ app.js:4025
+EventEmitter.emit @ app.js:3226
+WebSocketTransport.ws.onmessage @ app.js:6101
+=================
+after rm -r node_modules
+127.0.0.1:5000
+shows only one console error:
+
+Uncaught Error: Module build failed: Error: ENOENT: no such file or directory, open 'C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\url\url.js'
+    at Object.<anonymous> (app.js:1062)
+    at __webpack_require__ (app.js:679)
+    at fn (app.js:89)
+    at Object.<anonymous> (app.js:807)
+    at Object.<anonymous> (app.js:1055)
+    at __webpack_require__ (app.js:679)
+    at fn (app.js:89)
+    at Object.<anonymous> (app.js:792)
+    at __webpack_require__ (app.js:679)
+    at app.js:725
+
+==================
+tried restarting webpack-dev-server
+which triggered complaint from firewall about external connections,
+but failed webpack compile with lots of errors:
+
+$ npm restart webpack-dev-server -- --port=5001
+
+> restart
+> npm stop --if-present && npm start "webpack-dev-server" "--port=5001"
+
+
+> start
+> webpack-dev-server "webpack-dev-server"
+
+Project is running at http://localhost:8080/
+webpack output is served from /
+Content not from webpack is served from C:\Users\steph\Code\DevelopmentInterviewStarterKit\client\dist
+Hash: 0be84f6c54322e766b3f
+Version: webpack 3.12.0
+Time: 26064ms
+ Asset    Size  Chunks                    Chunk Names
+app.js  9.1 MB       0  [emitted]  [big]  main
+   [0] ./node_modules/node-libs-browser/node_modules/process/browser.js 5.42 kB {0} [built]
+   [3] ./node_modules/path-browserify/index.js 6.18 kB {0} [built]
+  [15] ./node_modules/react/index.js 190 bytes {0} [built]
+  [17] ./node_modules/url/url.js 23.3 kB {0} [built]
+  [33] ./node_modules/stream-http/index.js 1.88 kB {0} [built]
+ [168] (webpack)/hot/log.js 1.04 kB {0} [built]
+ [169] (webpack)/hot/emitter.js 77 bytes {0} [built]
+ [173] ./node_modules/redux/es/index.js 1.08 kB {0} [built]
+ [229] ./node_modules/spdy/lib/spdy.js 506 bytes {0} [built]
+ [271] ./node_modules/strip-ansi/index.js 161 bytes {0} [built]
+ [567] multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server 64 bytes {0} [built]
+ [568] (webpack)-dev-server/client?http://localhost:8080 7.93 kB {0} [built]
+ [578] (webpack)/hot/only-dev-server.js 2.37 kB {0} [built]
+ [580] ./client/src/index.js 1.4 kB {0} [built]
+ [661] (webpack)-dev-server/lib/Server.js 23.2 kB {0} [built]
+    + 1463 hidden modules
+
+WARNING in ./node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js
+24:11-32 Critical dependency: the request of a dependency is an expression
+ @ ./node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/tools/node.js
+ @ ./node_modules/uglifyjs-webpack-plugin/dist/index.js
+ @ (webpack)/lib/optimize/UglifyJsPlugin.js
+ @ (webpack)/lib/webpack.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+WARNING in ./node_modules/loader-runner/lib/loadLoader.js
+3:2-28 Critical dependency: the request of a dependency is an expression
+ @ ./node_modules/loader-runner/lib/loadLoader.js
+ @ ./node_modules/loader-runner/lib/LoaderRunner.js
+ @ (webpack)/lib/NormalModule.js
+ @ (webpack)/lib/AutomaticPrefetchPlugin.js
+ @ (webpack)/lib/webpack.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+WARNING in ./node_modules/express/lib/view.js
+81:13-25 Critical dependency: the request of a dependency is an expression
+ @ ./node_modules/express/lib/view.js
+ @ ./node_modules/express/lib/application.js
+ @ ./node_modules/express/lib/express.js
+ @ ./node_modules/express/index.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+WARNING in ./node_modules/chokidar/lib/fsevents-handler.js
+Module not found: Error: Can't resolve 'fsevents' in 'C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\chokidar\lib'
+ @ ./node_modules/chokidar/lib/fsevents-handler.js 7:17-36
+ @ ./node_modules/chokidar/index.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+ERROR in ./node_modules/chokidar/index.js
+Module not found: Error: Can't resolve 'fs' in 'C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\chokidar'
+ @ ./node_modules/chokidar/index.js 3:9-22
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+ERROR in ./node_modules/chokidar/lib/nodefs-handler.js
+Module not found: Error: Can't resolve 'fs' in 'C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\chokidar\lib'
+ @ ./node_modules/chokidar/lib/nodefs-handler.js 3:9-22
+ @ ./node_modules/chokidar/index.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+ERROR in ./node_modules/chokidar/lib/fsevents-handler.js
+Module not found: Error: Can't resolve 'fs' in 'C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\chokidar\lib'
+ @ ./node_modules/chokidar/lib/fsevents-handler.js 3:9-22
+ @ ./node_modules/chokidar/index.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+ERROR in ./node_modules/destroy/index.js
+Module not found: Error: Can't resolve 'fs' in 'C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\destroy'
+ @ ./node_modules/destroy/index.js 14:17-30
+ @ ./node_modules/send/index.js
+ @ ./node_modules/serve-static/index.js
+ @ ./node_modules/express/lib/express.js
+ @ ./node_modules/express/index.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+ERROR in ./node_modules/etag/index.js
+Module not found: Error: Can't resolve 'fs' in 'C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\etag'
+ @ ./node_modules/etag/index.js 22:12-25
+ @ ./node_modules/send/index.js
+ @ ./node_modules/serve-static/index.js
+ @ ./node_modules/express/lib/express.js
+ @ ./node_modules/express/index.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+ERROR in ./node_modules/express/lib/view.js
+Module not found: Error: Can't resolve 'fs' in 'C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\express\lib'
+ @ ./node_modules/express/lib/view.js 18:9-22
+ @ ./node_modules/express/lib/application.js
+ @ ./node_modules/express/lib/express.js
+ @ ./node_modules/express/index.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+ERROR in ./node_modules/fs.realpath/index.js
+Module not found: Error: Can't resolve 'fs' in 'C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\fs.realpath'
+ @ ./node_modules/fs.realpath/index.js 8:9-22
+ @ ./node_modules/glob/glob.js
+ @ ./node_modules/rimraf/rimraf.js
+ @ ./node_modules/del/index.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+ERROR in ./node_modules/fs.realpath/old.js
+Module not found: Error: Can't resolve 'fs' in 'C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\fs.realpath'
+ @ ./node_modules/fs.realpath/old.js 24:9-22
+ @ ./node_modules/fs.realpath/index.js
+ @ ./node_modules/glob/glob.js
+ @ ./node_modules/rimraf/rimraf.js
+ @ ./node_modules/del/index.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+ERROR in ./node_modules/glob/glob.js
+Module not found: Error: Can't resolve 'fs' in 'C:\Users\steph\Code\DevelopmentInterviewStarterKit\node_modules\glob'
+ @ ./node_modules/glob/glob.js 43:9-22
+ @ ./node_modules/rimraf/rimraf.js
+ @ ./node_modules/del/index.js
+ @ (webpack)-dev-server/lib/Server.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/only-dev-server ./client/src/index.js webpack-dev-server
+
+==================
+NOTE: node_modules/url/url.js exists and looks fine, although it is reported missing in the browser console
+I assume webpack is hosed, but it is not clear how to restart it OK
+Maybe just restart bash?
+==========================================================================================================
+restart bash and decide to try to take previous advice about using wdm to avoid polling
+
+$ bin/bundle install
+Fetching gem metadata from https://rubygems.org/............
+Resolving dependencies...
+Using rake 13.0.3
+Using concurrent-ruby 1.1.8
+Using i18n 1.8.9
+Using minitest 5.14.4
+Using thread_safe 0.3.6
+Using tzinfo 1.2.9
+Using activesupport 5.1.7
+Using builder 3.2.4
+Using erubi 1.10.0
+Using racc 1.5.2
+Using nokogiri 1.11.1 (x64-mingw32)
+Using rails-dom-testing 2.0.3
+Using crass 1.0.6
+Using loofah 2.9.0
+Using rails-html-sanitizer 1.3.0
+Using actionview 5.1.7
+Using rack 2.2.3
+Using rack-test 1.1.0
+Using actionpack 5.1.7
+Using nio4r 2.5.5
+Using websocket-extensions 0.1.5
+Using websocket-driver 0.6.5
+Using actioncable 5.1.7
+Using globalid 0.4.2
+Using activejob 5.1.7
+Using mini_mime 1.0.2
+Using mail 2.7.1
+Using actionmailer 5.1.7
+Using activemodel 5.1.7
+Using arel 8.0.0
+Using activerecord 5.1.7
+Using public_suffix 4.0.6
+Using addressable 2.7.0
+Using bcrypt 3.1.16
+Using bindex 0.8.1
+Using bundler 2.2.11
+Using byebug 11.1.3
+Using xpath 3.2.0
+Using capybara 2.18.0
+Using childprocess 3.0.0
+Using coderay 1.1.3
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Using coffee-script 2.4.1
+Using method_source 1.0.0
+Using thor 1.1.0
+Using railties 5.1.7
+Using coffee-rails 4.2.2
+Using orm_adapter 0.5.0
+Using responders 3.0.1
+Using warden 1.2.9
+Using devise 4.7.3 from https://github.com/heartcombo/devise.git (at ca-omniauth-2@e16d60d)
+Using dotenv 2.7.6
+Using dotenv-rails 2.7.6
+Using faraday-net_http 1.0.1
+Using multipart-post 2.1.1
+Using ruby2_keywords 0.0.4
+Using faraday 1.3.0
+Using ffi 1.14.2 (x64-mingw32)
+Using foreman 0.87.2
+Using hashie 4.1.0
+Using jbuilder 2.11.2
+Using jwt 2.2.2
+Using rb-fsevent 0.10.4
+Using rb-inotify 0.10.1
+Using ruby_dep 1.5.0
+Using listen 3.1.5
+Using multi_json 1.15.0
+Using multi_xml 0.6.0
+Using oauth2 1.4.4
+Using rack-protection 2.1.0
+Using omniauth 2.0.3
+Using omniauth-oauth2 1.7.1
+Using omniauth-salesloft 1.0.0
+Using pry 0.14.0
+Using pry-rails 0.3.9
+Using puma 3.12.6
+Using sprockets 3.7.2
+Using sprockets-rails 3.2.2
+Using rails 5.1.7
+Using rubyzip 2.3.0
+Using sass-listen 4.0.0
+Using sass 3.7.4
+Using tilt 2.0.10
+Using sass-rails 5.0.7
+Using selenium-webdriver 3.142.7
+Using spring 2.1.1
+Using spring-watcher-listen 2.0.1
+Using sqlite3 1.4.2
+Using turbolinks-source 5.2.0
+Using turbolinks 5.2.1
+Using tzinfo-data 1.2021.1
+Using uglifier 4.2.0
+Fetching wdm 0.1.1
+Installing wdm 0.1.1 with native extensions
+Using web-console 3.7.0
+Bundle complete! 24 Gemfile dependencies, 95 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (main)
+$ bin/bundle info wdm
+  * wdm (0.1.1)
+        Summary: Windows Directory Monitor (WDM) is a threaded directories monitor for Windows.
+        Homepage: https://github.com/Maher4Ever/wdm
+        Path: C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/wdm-0.1.1
+
+==================
+same errors on url.js after restart
+attempting to restart servers seems to show webpack is already running?
+
+Request URL: http://localhost:5001/app.js
+Request Method: GET
+Status Code: 200 OK
+Remote Address: 127.0.0.1:5001
+Referrer Policy: no-referrer-when-downgrade
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (main)
+$ bin/bundle exec foreman start
+06:38:34 web.1     | started with pid 18020
+06:38:34 webpack.1 | started with pid 15152
+06:38:35 webpack.1 |
+06:38:35 webpack.1 | > start
+06:38:35 webpack.1 | > webpack-dev-server "--port=5001"
+06:38:35 webpack.1 |
+06:38:38 webpack.1 | node:events:356
+06:38:38 webpack.1 |       throw er; // Unhandled 'error' event
+06:38:38 webpack.1 |       ^
+06:38:38 webpack.1 |
+06:38:38 webpack.1 | Error: listen EADDRINUSE: address already in use 127.0.0.1:5001
+06:38:38 webpack.1 |     at Server.setupListenHandle [as _listen2] (node:net:1312:16)
+06:38:38 webpack.1 |     at listenInCluster (node:net:1360:12)
+06:38:38 webpack.1 |     at GetAddrInfoReqWrap.doListen [as callback] (node:net:1498:7)
+06:38:38 webpack.1 |     at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:8)
+06:38:38 webpack.1 | Emitted 'error' event on Server instance at:
+06:38:38 webpack.1 |     at emitErrorNT (node:net:1339:8)
+06:38:38 webpack.1 |     at processTicksAndRejections (node:internal/process/task_queues:81:21) {
+06:38:38 webpack.1 |   code: 'EADDRINUSE',
+06:38:38 webpack.1 |   errno: -4091,
+06:38:38 webpack.1 |   syscall: 'listen',
+06:38:38 webpack.1 |   address: '127.0.0.1',
+06:38:38 webpack.1 |   port: 5001
+06:38:38 webpack.1 | }
+06:38:39 webpack.1 | exited with code 1
+06:38:39 system    | sending SIGKILL to all processes
+06:38:39 system    | sending SIGKILL to web.1 at pid 18020
+06:38:39 web.1     | exited with code 0
+===================
+after hard reboot, app and webpack seem to start OK, but stopped
+with lots of console errors net::ERR_CONNECTION_REFUSED on webpack
+
+steph@DESKTOP-71BV78O MINGW64 ~/Code/DevelopmentInterviewStarterKit (main)
+$ bin/bundle exec foreman start
+07:00:17 web.1     | started with pid 5112
+07:00:17 webpack.1 | started with pid 3132
+07:02:52 webpack.1 |
+07:02:52 webpack.1 | > start
+07:02:52 webpack.1 | > webpack-dev-server "--port=5001"
+07:02:52 webpack.1 |
+07:04:10 web.1     | => Booting Puma
+07:04:10 web.1     | => Rails 5.1.7 application starting in development
+07:04:10 web.1     | => Run `rails server -h` for more startup options
+07:04:59 web.1     | *** SIGUSR2 not implemented, signal based restart unavailable!
+07:04:59 web.1     | *** SIGUSR1 not implemented, signal based restart unavailable!
+07:04:59 web.1     | *** SIGHUP not implemented, signal based logs reopening unavailable!
+07:04:59 web.1     | Puma starting in single mode...
+07:04:59 web.1     | * Version 3.12.6 (ruby 2.7.2-p137), codename: Llamas in Pajamas
+07:04:59 web.1     | * Min threads: 5, max threads: 5
+07:04:59 web.1     | * Environment: development
+07:04:59 web.1     | * Listening on tcp://localhost:5000
+07:04:59 web.1     | Use Ctrl-C to stop
+07:05:34 web.1     | Started GET "/" for 127.0.0.1 at 2021-02-27 07:05:34 -0500
+07:05:40 web.1     |    (0.4ms)  SELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC
+07:05:40 web.1     | Processing by MainController#index as HTML
+07:05:41 web.1     |   Rendering main/index.html.erb within layouts/application
+07:05:41 web.1     |   Rendered main/index.html.erb within layouts/application (262.3ms)
+07:05:41 web.1     | Completed 200 OK in 1448ms (Views: 1257.3ms | ActiveRecord: 0.0ms)
+07:05:41 web.1     |
+07:05:41 web.1     |
+07:07:12 webpack.1 | Project is running at http://localhost:5001/
+07:07:12 webpack.1 | webpack output is served from /
+07:07:12 webpack.1 | Content not from webpack is served from C:\Users\steph\Code\DevelopmentInterviewStarterKit\client\dist
+07:07:46 web.1     | Started GET "/" for 127.0.0.1 at 2021-02-27 07:07:46 -0500
+07:07:46 web.1     | Processing by MainController#index as HTML
+07:07:46 web.1     |   Rendering main/index.html.erb within layouts/application
+07:07:46 web.1     |   Rendered main/index.html.erb within layouts/application (0.6ms)
+07:07:46 web.1     | Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+07:07:46 web.1     |
+07:07:46 web.1     |
+07:07:54 webpack.1 | webpack: wait until bundle finished: /app.js
+07:08:32 webpack.1 | Hash: 4b6b45110d2b903aad6e
+07:08:32 webpack.1 | Version: webpack 3.12.0
+07:08:32 webpack.1 | Time: 79199ms
+07:08:32 webpack.1 |  Asset     Size  Chunks                    Chunk Names
+07:08:32 webpack.1 | app.js  1.64 MB       0  [emitted]  [big]  main
+07:08:32 webpack.1 |    [0] ./node_modules/react/index.js 190 bytes {0} [built]
+07:08:32 webpack.1 |   [12] (webpack)/hot/log.js 1.04 kB {0} [built]
+07:08:32 webpack.1 |   [16] ./node_modules/redux/es/index.js 1.08 kB {0} [built]
+07:08:32 webpack.1 |   [24] (webpack)/hot/emitter.js 77 bytes {0} [built]
+07:08:32 webpack.1 |   [26] ./node_modules/react-router-redux/lib/index.js 1.97 kB {0} [built]
+07:08:32 webpack.1 |   [49] multi (webpack)-dev-server/client?http://localhost:5001 webpack/hot/only-dev-server ./client/src/index.js 52 bytes {0} [built]
+07:08:32 webpack.1 |   [50] (webpack)-dev-server/client?http://localhost:5001 7.93 kB {0} [built]
+07:08:32 webpack.1 |   [51] ./node_modules/url/url.js 23.3 kB {0} [built]
+07:08:32 webpack.1 |   [58] ./node_modules/strip-ansi/index.js 161 bytes {0} [built]
+07:08:32 webpack.1 |   [60] ./node_modules/loglevel/lib/loglevel.js 7.86 kB {0} [built]
+07:08:32 webpack.1 |   [61] (webpack)-dev-server/client/socket.js 1.08 kB {0} [built]
+07:08:32 webpack.1 |   [63] (webpack)-dev-server/client/overlay.js 3.67 kB {0} [built]
+07:08:32 webpack.1 |   [68] (webpack)/hot nonrecursive ^\.\/log$ 170 bytes {0} [built]
+07:08:32 webpack.1 |   [70] (webpack)/hot/only-dev-server.js 2.37 kB {0} [built]
+07:08:32 webpack.1 |   [72] ./client/src/index.js 1.4 kB {0} [built]
+07:08:32 webpack.1 |     + 140 hidden modules
+07:08:32 webpack.1 | webpack: Compiled successfully.
+07:08:44 web.1     | Started GET "/api/me.json" for 127.0.0.1 at 2021-02-27 07:08:44 -0500
+07:08:46 web.1     | Processing by Api::MeController#me as JSON
+07:08:48 web.1     | Completed 200 OK in 1729ms (Views: 157.1ms | ActiveRecord: 0.0ms)
+07:08:48 web.1     |
+07:08:48 web.1     |
+07:09:14 system    | SIGINT received, starting shutdown
+07:09:14 web.1     | - Gracefully stopping, waiting for requests to finish
+07:09:14 web.1     | === puma shutdown: 2021-02-27 07:09:14 -0500 ===
+07:09:14 web.1     | - Goodbye!
+07:09:14 web.1     | Exiting
+07:09:14 system    | sending SIGKILL to all processes
+07:09:14 system    | sending SIGKILL to web.1 at pid 5112
+07:09:14 system    | sending SIGKILL to webpack.1 at pid 3132
+07:09:14 web.1     | exited with code 0
+07:09:15 webpack.1 | exited with code 0
+Terminate batch job (Y/N)? Y
+Y
+
+
