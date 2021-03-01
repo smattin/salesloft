@@ -5,4 +5,13 @@ defmodule SalesloftWeb.LayoutViewTest do
   # use functions such as safe_to_string() to convert the helper
   # result into an HTML string.
   # import Phoenix.HTML
+
+  # Bring render/3 and render_to_string/3 for testing custom views
+  import Phoenix.View
+
+    test "renders People table" do
+      assert render_to_string(SalesloftWeb.LayoutView, "salesloft", []) == "Salesloft People"
+    end
+
+
 end

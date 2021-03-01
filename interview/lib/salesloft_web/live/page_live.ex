@@ -3,7 +3,14 @@ defmodule SalesloftWeb.PageLive do
 
   @impl true
   def mount(_params, _session, socket) do
-    {:ok, assign(socket, query: "", results: %{})}
+    {:ok, assign(socket, query: "", results:
+     [%{
+      id: 249340741,
+      full_name: "Steven Pease",
+      email_address: "sakatius@gmail.com",
+      title: "Software Engineer",
+     }]
+     )}
   end
 
   @impl true
