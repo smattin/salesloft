@@ -54,3 +54,29 @@ Directory watching for updates relies on some symbolic links in assets/node_modu
 curl -H "Authorization: Bearer $SALESLOFT_APPLICATION_SECRET" https://api.salesloft.com/v2/people.json -O
 ===============
 There are potentially 4 email addresses for each person in the JSON data, but only email_address and full_email_address are consistently filled and the latter may be syntheticly created from display_name and email_address.
+===============
+try generating code supporting JSON Person data
+
+$ mix phx.gen.json Data People people title:string display_name:string email_address:string
+* creating lib/salesloft_web/controllers/people_controller.ex
+* creating lib/salesloft_web/views/people_view.ex
+* creating test/salesloft_web/controllers/people_controller_test.exs
+* creating lib/salesloft_web/views/changeset_view.ex
+* creating lib/salesloft_web/controllers/fallback_controller.ex
+* creating lib/salesloft/data/people.ex
+* creating priv/repo/migrations/20210301055930_create_people.exs
+* creating lib/salesloft/data.ex
+* injecting lib/salesloft/data.ex
+* creating test/salesloft/data_test.exs
+* injecting test/salesloft/data_test.exs
+
+Add the resource to your :api scope in lib/salesloft_web/router.ex:
+
+    resources "/people", PeopleController, except: [:new, :edit]
+
+
+Remember to update your repository by running migrations:
+
+    $ mix ecto.migrate
+
+
