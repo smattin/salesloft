@@ -9,7 +9,14 @@ defmodule SalesloftWeb.PageLive do
       full_name: "Steven Pease",
       email_address: "sakatius@gmail.com",
       title: "Software Engineer",
-     }]
+     },
+     %{
+      id: 251436152,
+      full_name: "Possibly Duplicate",
+      email_address: "sakatius@gmail.com",
+      "title": "My Job",
+     },
+    ]
      )}
   end
 
