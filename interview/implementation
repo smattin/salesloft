@@ -80,3 +80,12 @@ Remember to update your repository by running migrations:
     $ mix ecto.migrate
 
 
+$ mix ecto.migrate
+
+01:14:14.029 [info]  == Running 20210301055930 Salesloft.Repo.Migrations.CreatePeople.change/0 forward
+
+01:14:14.037 [info]  create table people
+
+01:14:15.218 [info]  == Migrated 20210301055930 in 1.1s
+
+
