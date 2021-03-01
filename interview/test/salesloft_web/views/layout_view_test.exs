@@ -9,9 +9,7 @@ defmodule SalesloftWeb.LayoutViewTest do
   # Bring render/3 and render_to_string/3 for testing custom views
   import Phoenix.View
 
-    test "renders People table" do
-      assert render_to_string(SalesloftWeb.LayoutView, "salesloft", []) == "Salesloft People"
-    end
+
 
 
 end
