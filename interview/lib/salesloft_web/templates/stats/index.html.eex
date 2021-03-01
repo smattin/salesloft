@@ -1,0 +1,28 @@
+<h1>Listing Stats</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Char</th>
+      <th>Count</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for stats <- @stats do %>
+    <tr>
+      <td><%= stats.char %></td>
+      <td><%= stats.count %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.stats_path(@conn, :show, stats) %></span>
+        <span><%= link "Edit", to: Routes.stats_path(@conn, :edit, stats) %></span>
+        <span><%= link "Delete", to: Routes.stats_path(@conn, :delete, stats), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Stats", to: Routes.stats_path(@conn, :new) %></span>

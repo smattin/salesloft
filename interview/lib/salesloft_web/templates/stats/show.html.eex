@@ -1,0 +1,18 @@
+<h1>Show Stats</h1>
+
+<ul>
+
+  <li>
+    <strong>Char:</strong>
+    <%= @stats.char %>
+  </li>
+
+  <li>
+    <strong>Count:</strong>
+    <%= @stats.count %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.stats_path(@conn, :edit, @stats) %></span>
+<span><%= link "Back", to: Routes.stats_path(@conn, :index) %></span>

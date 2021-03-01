@@ -88,4 +88,15 @@ $ mix ecto.migrate
 
 01:14:15.218 [info]  == Migrated 20210301055930 in 1.1s
 
+=================
+For Level 2
+get list of email addresses
+
+iex(4)> Enum.map(Salesloft.Data.list_people, fn(person) -> person.email_address end)
+[debug] QUERY OK source="people" db=16.0ms idle=313.0ms
+SELECT p0."id", p0."display_name", p0."email_address", p0."title", p0."inserted_at", p0."updated_at" FROM "people" AS p0 []
+["sakatius@gmail.com", "sakatius@gmail.com"]
+
+
+
 

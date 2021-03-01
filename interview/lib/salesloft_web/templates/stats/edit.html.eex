@@ -1,0 +1,5 @@
+<h1>Edit Stats</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.stats_path(@conn, :update, @stats)) %>
+
+<span><%= link "Back", to: Routes.stats_path(@conn, :index) %></span>

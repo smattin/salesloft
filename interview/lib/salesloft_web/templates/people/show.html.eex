@@ -1,0 +1,23 @@
+<h1>Show People</h1>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @people.title %>
+  </li>
+
+  <li>
+    <strong>Display name:</strong>
+    <%= @people.display_name %>
+  </li>
+
+  <li>
+    <strong>Email address:</strong>
+    <%= @people.email_address %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.people_path(@conn, :edit, @people) %></span>
+<span><%= link "Back", to: Routes.people_path(@conn, :index) %></span>
