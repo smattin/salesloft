@@ -97,6 +97,7 @@ iex(4)> Enum.map(Salesloft.Data.list_people, fn(person) -> person.email_address 
 SELECT p0."id", p0."display_name", p0."email_address", p0."title", p0."inserted_at", p0."updated_at" FROM "people" AS p0 []
 ["sakatius@gmail.com", "sakatius@gmail.com"]
 
-
+=================
+added separate module for liveview interview to fix conflicts with page_live.ex
 
 
