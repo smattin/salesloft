@@ -1,6 +1,7 @@
 defmodule SalesloftWeb.PageLive do
   use SalesloftWeb, :live_view
-
+  require Logger
+  alias Salesloft.Data
   @impl true
   def mount(_params, _session, socket) do
     {:ok, assign(socket, query: "", results:
@@ -21,25 +22,24 @@ defmodule SalesloftWeb.PageLive do
   end
 
   @impl true
-  def handle_event("suggest", %{"q" => query}, socket) do
-    {:noreply, assign(socket, results: search(query), query: query)}
+  def handle_event("stats", %{"q" => query}, socket) do
+    {:ok, assign(socket, query: "", stats: Data.list_stats())}
   end
 
   @impl true
-  def handle_event("search", %{"q" => query}, socket) do
-    case search(query) do
-      %{^query => vsn} ->
-        {:noreply, redirect(socket, external: "https://hexdocs.pm/#{query}/#{vsn}")}
+  def handle_event("refresh", %{"q" => query}, socket) do
+    case refresh(query) do
+      {stats} -> {}
 
       _ ->
         {:noreply,
          socket
-         |> put_flash(:error, "No dependencies found matching \"#{query}\"")
-         |> assign(results: %{}, query: query)}
+         |> put_flash(:error, "No email stats found")
+         |> assign(stats: %{}, query: query)}
     end
   end
 
-  defp search(query) do
+  defp refresh(query) do
     if not SalesloftWeb.Endpoint.config(:code_reloader) do
       raise "action disabled when not in development"
     end

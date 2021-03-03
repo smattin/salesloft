@@ -18,12 +18,14 @@ defmodule SalesloftWeb.Router do
     pipe_through :browser
 
     live "/", PageLive, :index
+    live "/interview", InterviewLive, :index
   end
 
   # Other scopes may use custom stacks.
   scope "/api", SalesloftWeb do
     pipe_through :api
     resources "/people", PeopleController, except: [:new, :edit]
+    resources "/stats", StatsController, except: [:new, :edit]
   end
 
   # Enables LiveDashboard only for development

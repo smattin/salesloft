@@ -10,14 +10,41 @@
         </tr>
       </thead>
       <datalist id="people">
-        <%= for person <- @results do %>
+        <%= for p <- @people do %>
           <tr>
-            <td><%= person.title %></td>
-            <td><%= person.full_name %></td>
-            <td><%= person.email_address %></td>
+            <td><%= p.title %></td>
+            <td><%= p.display_name %></td>
+            <td><%= p.email_address %></td>
           </tr>
         <% end %>
       </datalist>
     </table>
 </section>
+<section class="phx-hero">
+  <p>Level 2</p>
+    <form phx-change="stats" phx-submit="refresh">
+    <button type="submit" phx-disable-with="Calculating...">Email address stats</button>
+
+      <table>
+      <thead>
+        <tr>
+          <%= for col <- ["Character","Count"] do %>
+            <th style="color:Gray; padding-left:1em"><%= col %></th>
+          <% end %>
+        </tr>
+      </thead>
+      <datalist id="stats">
+        <%= for stat <- @stats do %>
+          <tr>
+            <td><%= stat.char %></td>
+            <td><%= stat.count %></td>
+          </tr>
+        <% end %>
+      </datalist>
+    </table>
+    </form>
+    </section
+    
+    
+
 
